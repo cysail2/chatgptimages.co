@@ -1,0 +1,49 @@
+{
+  "defaults": {
+    "titleMin": 40,
+    "titleMax": 70,
+    "descMin": 120,
+    "descMax": 160,
+    "wordMin": 1000,
+    "keywordDensityMin": 0.5,
+    "keywordDensityMax": 3.5,
+    "h2Min": 6,
+    "h3Min": 8,
+    "standardH2Modules": ["what", "how", "why", "who", "pricing", "faq", "ready"]
+  },
+  "pages": [
+    {
+      "name": "Home",
+      "path": "/",
+      "keyword": "chatgpt images",
+      "wordMin": 2000,
+      "h2Min": 10,
+      "h3Min": 20,
+      "requireH2Modules": ["what", "how", "why", "who", "pricing", "faq", "ready"]
+    },
+    {
+      "name": "Generator",
+      "path": "/gpt-image-2",
+      "keyword": "chatgpt images",
+      "wordMin": 1200
+    },
+    {
+      "name": "Review",
+      "path": "/gpt-image-2-review",
+      "keyword": "chatgpt images",
+      "wordMin": 1500
+    },
+    {
+      "name": "Pricing",
+      "path": "/pricing",
+      "keyword": "chatgpt images",
+      "wordMin": 500,
+      "h2Min": 4
+    }
+  ],
+  "siteFiles": [
+    { "path": "/robots.txt", "contentType": "text/plain" },
+    { "path": "/sitemap.xml", "contentType": "application/xml" },
+    { "path": "/favicon.ico", "contentType": "image/" }
+  ]
+}
