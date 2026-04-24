@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "Which pack gives the best value per credit?",
-    a: "The Max pack ($99.90 for 5,000 credits at $0.020 per credit) gives the lowest per-credit cost. The Pro pack ($29.90 for 1,300 credits at $0.023 per credit) is the most popular choice for teams with regular but moderate usage.",
+    a: "The Max pack ($99.90 for 5,000 credits at $0.020 per credit) gives the lowest per-credit cost and is our most popular choice for teams and power users. The Pro pack ($29.90 for 1,300 credits at $0.023 per credit) fits creators with regular but moderate usage.",
   },
 ];
 

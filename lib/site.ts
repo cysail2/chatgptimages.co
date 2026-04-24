@@ -25,11 +25,13 @@ export const nav = [
   { label: "Pricing", href: "/pricing" },
 ] as const;
 
+// priceId values match the backend pricing table (张聪聪美stripe -- chatgptimages.co).
+// Test Stripe IDs are prefixed with "test_" and route to the test checkout.
 export const pricing = [
   {
     id: "starter",
     name: "Starter",
-    priceId: "price_chatgptimages_starter",
+    priceId: "test_gpt-2",
     price: 9.9,
     priceAmount: 9.9,
     credits: 400,
@@ -40,24 +42,24 @@ export const pricing = [
   {
     id: "pro",
     name: "Pro",
-    priceId: "price_chatgptimages_pro",
+    priceId: "test_gpt-3",
     price: 29.9,
     priceAmount: 29.9,
     credits: 1300,
     perCredit: 0.023,
-    popular: true,
-    description: "Best value for regular creators",
+    popular: false,
+    description: "Great for regular creators",
   },
   {
     id: "max",
     name: "Max",
-    priceId: "price_chatgptimages_max",
+    priceId: "test_gpt-1",
     price: 99.9,
     priceAmount: 99.9,
     credits: 5000,
     perCredit: 0.02,
-    popular: false,
-    description: "For power users and teams",
+    popular: true,
+    description: "Best value for power users and teams",
   },
 ] as const;
 
