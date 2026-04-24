@@ -1,5 +1,21 @@
 import type { MetadataRoute } from "next";
-import { site } from "@/lib/site";
+import siteConfigData from "@/data/site.json";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || siteConfigData.site.url;
+
+const AI_BOTS = [
+  "GPTBot",
+  "ChatGPT-User",
+  "OAI-SearchBot",
+  "anthropic-ai",
+  "ClaudeBot",
+  "Claude-Web",
+  "Google-Extended",
+  "PerplexityBot",
+  "CCBot",
+  "Bytespider",
+  "Applebot-Extended",
+];
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,10 +23,16 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/sign-in", "/sign-up"],
+        disallow: [
+          "/profile",
+          "/account",
+          "/library",
+          "/payment-result",
+          "/payment-success",
+          "/api/",
+        ],
       },
     ],
-    sitemap: `${site.url}/sitemap.xml`,
-    host: site.url,
+    sitemap: `${BASE_URL}/sitemap.xml`,
   };
 }

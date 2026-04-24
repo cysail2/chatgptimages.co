@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  allowedDevOrigins: ["localhost:3000", "192.168.2.20:3000"],
+  images: {
+    qualities: [70, 75, 90],
+    remotePatterns: [
+    ],
+  },
 };
 
 export default nextConfig;

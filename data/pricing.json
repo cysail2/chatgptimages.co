@@ -1,0 +1,76 @@
+{
+  "plans": [
+    {
+      "key": "starter",
+      "priceId": "test_gpt-2",
+      "popular": false,
+      "title": "Starter",
+      "price": "$9.90",
+      "priceAmount": 9.9,
+      "credits": 400,
+      "creditsText": "400 credits",
+      "pricePerPt": "$0.025 / credit",
+      "features": [
+        "400 generation credits",
+        "Text-to-image and image-to-image",
+        "1K, 2K, and 4K export options",
+        "All aspect ratios supported",
+        "Commercial use rights",
+        "Credits never expire"
+      ],
+      "buttonText": "Get Starter"
+    },
+    {
+      "key": "pro",
+      "priceId": "test_gpt-3",
+      "popular": false,
+      "title": "Pro",
+      "price": "$29.90",
+      "priceAmount": 29.9,
+      "credits": 1300,
+      "creditsText": "1,300 credits",
+      "pricePerPt": "$0.023 / credit",
+      "features": [
+        "1,300 generation credits",
+        "Text-to-image and image-to-image",
+        "1K, 2K, and 4K export options",
+        "Commercial use rights",
+        "No watermark downloads",
+        "Credits never expire"
+      ],
+      "buttonText": "Get Pro"
+    },
+    {
+      "key": "max",
+      "priceId": "test_gpt-1",
+      "popular": true,
+      "title": "Max",
+      "price": "$99.90",
+      "priceAmount": 99.9,
+      "credits": 5000,
+      "creditsText": "5,000 credits",
+      "pricePerPt": "$0.020 / credit",
+      "features": [
+        "5,000 generation credits",
+        "Best per-credit rate",
+        "Text-to-image and image-to-image",
+        "All output sizes and aspect ratios",
+        "Commercial use rights",
+        "Priority value for teams"
+      ],
+      "buttonText": "Get Max"
+    }
+  ],
+  "models": {
+    "gpt-image-2": {
+      "cost": 6,
+      "resolutions": {
+        "1k-medium": 6,
+        "1k-high": 22,
+        "2k-medium": 9,
+        "2k-high": 33,
+        "4k": 60
+      }
+    }
+  }
+}

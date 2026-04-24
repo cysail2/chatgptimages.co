@@ -1,0 +1,32 @@
+{
+  "pages": [
+    {
+      "id": "gpt-image-2",
+      "title": "Generator",
+      "path": "/gpt-image-2",
+      "group": "product",
+      "visibility": "public",
+      "searchVisibility": "index",
+      "priority": 0.9,
+      "changefreq": "weekly"
+    },
+    {
+      "id": "home",
+      "title": "Home",
+      "path": "/",
+      "group": "home",
+      "visibility": "public",
+      "searchVisibility": "index"
+    },
+    {
+      "id": "gpt-image-2-review",
+      "title": "Review",
+      "path": "/gpt-image-2-review",
+      "group": "review",
+      "visibility": "public",
+      "searchVisibility": "index",
+      "priority": 0.8,
+      "changefreq": "weekly"
+    }
+  ]
+}

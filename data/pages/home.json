@@ -1,0 +1,51 @@
+{
+  "id": "home",
+  "name": "Home",
+  "metadata": {
+    "title": "ChatGPT Images",
+    "description": "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
+    "keywords": "",
+    "canonical": "",
+    "og": {
+      "title": "ChatGPT Images",
+      "description": "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
+      "type": "website",
+      "image": "",
+      "url": "https://chatgptimages.co"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "",
+      "image": "",
+      "description": "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
+      "title": "ChatGPT Images"
+    },
+    "robots": [],
+    "hreflang": {}
+  },
+  "root": {
+    "id": "root",
+    "type": "container",
+    "props": {
+      "className": "min-h-screen bg-background"
+    },
+    "children": []
+  },
+  "theme": {
+    "preset": "light",
+    "light": {
+      "backgroundColor": "#ffffff",
+      "primaryColor": "#111111",
+      "textColor": "#111111",
+      "secondaryColor": "#666666",
+      "accentColor": "#2563eb"
+    },
+    "dark": {
+      "backgroundColor": "#0b0b0b",
+      "primaryColor": "#ffffff",
+      "textColor": "#ffffff",
+      "secondaryColor": "#a1a1aa",
+      "accentColor": "#60a5fa"
+    }
+  }
+}

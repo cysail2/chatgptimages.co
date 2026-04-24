@@ -1,0 +1,28 @@
+{
+  "examples": [
+    {
+      "id": "gpt-image-2-cityscape",
+      "aiModel": "gpt-image-2",
+      "imageUrl": "/images/real-results/cityscape.webp",
+      "description": "Futuristic city at sunset with cinematic composition and reflective water."
+    },
+    {
+      "id": "gpt-image-2-product",
+      "aiModel": "gpt-image-2",
+      "imageUrl": "/images/real-results/product.webp",
+      "description": "Luxury product photography with clean studio lighting and premium materials."
+    },
+    {
+      "id": "gpt-image-2-anime",
+      "aiModel": "gpt-image-2",
+      "imageUrl": "/images/gallery/anime.webp",
+      "description": "Soft anime illustration with environmental storytelling and warm color grading."
+    },
+    {
+      "id": "gpt-image-2-abstract",
+      "aiModel": "gpt-image-2",
+      "imageUrl": "/images/gallery/abstract.webp",
+      "description": "Abstract metallic artwork with strong contrast and saturated accent colors."
+    }
+  ]
+}

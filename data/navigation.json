@@ -1,0 +1,109 @@
+{
+  "mainNav": [
+    {
+      "id": "home",
+      "label": "Home",
+      "href": "/",
+      "matchPath": "/",
+      "matchExact": true,
+      "visible": true,
+      "order": 0
+    },
+    {
+      "id": "generator",
+      "label": "Generator",
+      "href": "/gpt-image-2",
+      "matchPath": "/gpt-image-2",
+      "visible": true,
+      "order": 1
+    },
+    {
+      "id": "review",
+      "label": "Review",
+      "href": "/gpt-image-2-review",
+      "matchPath": "/gpt-image-2-review",
+      "visible": true,
+      "order": 2
+    },
+    {
+      "id": "pricing",
+      "label": "Pricing",
+      "href": "/pricing",
+      "matchPath": "/pricing",
+      "visible": true,
+      "order": 3
+    }
+  ],
+  "footerNav": {
+    "resources": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Generator",
+        "href": "/gpt-image-2"
+      },
+      {
+        "label": "Review",
+        "href": "/gpt-image-2-review"
+      },
+      {
+        "label": "Pricing",
+        "href": "/pricing"
+      }
+    ],
+    "legal": [
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "/terms"
+      },
+      {
+        "label": "Refund Policy",
+        "href": "/refund"
+      }
+    ]
+  },
+  "mobileNav": [
+    {
+      "id": "mobile-home",
+      "label": "Home",
+      "href": "/",
+      "icon": "Home",
+      "visible": true,
+      "order": 1,
+      "placement": "bar"
+    },
+    {
+      "id": "mobile-generator",
+      "label": "Generate",
+      "href": "/gpt-image-2",
+      "icon": "ImageIcon",
+      "visible": true,
+      "order": 2,
+      "placement": "bar"
+    },
+    {
+      "id": "mobile-review",
+      "label": "Review",
+      "href": "/gpt-image-2-review",
+      "icon": "Star",
+      "visible": true,
+      "order": 3,
+      "placement": "bar"
+    },
+    {
+      "id": "mobile-pricing",
+      "label": "Pricing",
+      "href": "/pricing",
+      "icon": "CreditCard",
+      "visible": true,
+      "order": 4,
+      "placement": "bar"
+    }
+  ]
+}

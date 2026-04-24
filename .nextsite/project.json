@@ -1,0 +1,38 @@
+{
+  "architectureVersion": 2,
+  "templateId": "default",
+  "templateVersion": "0eab369-dirty",
+  "templateSource": "local-path",
+  "templateSourceOptions": {
+    "kind": "local-path",
+    "path": "/Users/yufei/Code/chiyuan/web-template"
+  },
+  "createdAt": "2026-04-24T06:00:00.000Z",
+  "updatedAt": "2026-04-24T06:48:43.655Z",
+  "siteName": "ChatGPT Images",
+  "targetDir": "/Users/yufei/Code/chiyuan/chuhai2/chatgptimages.co",
+  "siteType": "single",
+  "preservePaths": [
+    "data",
+    "documents",
+    "public",
+    ".env",
+    ".env.local",
+    "app/(custom-pages)",
+    "app/(products)"
+  ],
+  "dataStrategy": "project-owned",
+  "adminMode": "external-manager",
+  "enabledModules": [],
+  "enabledSystemFeatures": [
+    "enableOnlinePayment",
+    "enableUserModule",
+    "enableFreeTryButton",
+    "enableSignUpButton"
+  ],
+  "installedApps": [
+    "payment",
+    "user"
+  ],
+  "installedFrameworks": []
+}

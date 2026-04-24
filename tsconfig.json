@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,7 +23,93 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ],
+      "@/library": [
+        "./library"
+      ],
+      "@/library/*": [
+        "./library/*"
+      ],
+      "@/ai": [
+        "./library/ai"
+      ],
+      "@/ai/*": [
+        "./library/ai/*"
+      ],
+      "@/frameworks/ai": [
+        "./library/ai"
+      ],
+      "@/frameworks/ai/*": [
+        "./library/ai/*"
+      ],
+      "@/components": [
+        "./library/components"
+      ],
+      "@/components/*": [
+        "./library/components/*"
+      ],
+      "@/components/ui": [
+        "./library/ui"
+      ],
+      "@/components/ui/*": [
+        "./library/ui/*"
+      ],
+      "@/components/page-builder": [
+        "./library/page-builder"
+      ],
+      "@/components/page-builder/*": [
+        "./library/page-builder/*"
+      ],
+      "@/components/audio-player": [
+        "./library/media/audio-player"
+      ],
+      "@/components/audio-player/*": [
+        "./library/media/audio-player/*"
+      ],
+      "@/components/audio-playlist": [
+        "./library/media/audio-playlist"
+      ],
+      "@/components/audio-playlist/*": [
+        "./library/media/audio-playlist/*"
+      ],
+      "@/components/image-preview": [
+        "./library/media/image-preview"
+      ],
+      "@/components/image-preview/*": [
+        "./library/media/image-preview/*"
+      ],
+      "@/components/video-card": [
+        "./library/media/video-card"
+      ],
+      "@/components/video-card/*": [
+        "./library/media/video-card/*"
+      ],
+      "@/components/video-preview": [
+        "./library/media/video-preview"
+      ],
+      "@/components/video-preview/*": [
+        "./library/media/video-preview/*"
+      ],
+      "@/providers": [
+        "./library/providers"
+      ],
+      "@/providers/*": [
+        "./library/providers/*"
+      ],
+      "@/services": [
+        "./library/services"
+      ],
+      "@/services/*": [
+        "./library/services/*"
+      ],
+      "@/lib": [
+        "./library/lib"
+      ],
+      "@/lib/*": [
+        "./library/lib/*"
+      ],
     }
   },
   "include": [
@@ -27,8 +117,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

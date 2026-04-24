@@ -1,0 +1,89 @@
+{
+  "site": {
+    "name": "ChatGPT Images",
+    "logo": "/logo.webp",
+    "logoAlt": "ChatGPT Images logo",
+    "logoWidth": 120,
+    "logoHeight": 40,
+    "url": "https://chatgptimages.co",
+    "favicon": "/favicon.ico",
+    "description": "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
+    "siteType": "single"
+  },
+  "contact": {
+    "email": "support@chatgptimages.co",
+    "twitter": "",
+    "discord": ""
+  },
+  "seo": {
+    "defaultTitle": "ChatGPT Images 2.0 Generator — Create Realistic AI Photos",
+    "titleTemplate": "%s | ChatGPT Images",
+    "defaultDescription": "ChatGPT Images 2.0 is an AI image generator. Create realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
+    "defaultKeywords": "ChatGPT Images 2.0, ChatGPT images, AI image generator, text to image, AI art generator, gpt-image-2"
+  },
+  "features": {
+    "showMaintenanceBanner": false,
+    "maintenanceMessage": "",
+    "showPromoBanner": false,
+    "promoBannerText": "",
+    "promoBannerLink": "",
+    "enableOnlinePayment": true,
+    "enablePoliciesModule": false,
+    "enablePricingPage": false,
+    "enableAudioPlayer": false,
+    "enableUserModule": true,
+    "enableBlogModule": false,
+    "enableShowcaseModule": false,
+    "enableReviewsModule": false,
+    "enableSolutionsModule": false,
+    "enableAiStudio": false,
+    "enableFreeTryButton": true,
+    "freeTryButtonText": "Try Free",
+    "enableSignUpButton": true,
+    "paymentProvider": "stripe",
+    "enableThemeToggle": false
+  },
+  "analytics": {
+    "cnzz": {
+      "enabled": true,
+      "teamScriptId": "1281456635",
+      "siteScriptId": "1281476340"
+    },
+    "googleAds": {
+      "enabled": false,
+      "trackingId": ""
+    }
+  },
+  "api": {
+    "apiBase": "https://svc.chatgptimages.co",
+    "appId": "gptimage2",
+    "generator": "gpt-image-2"
+  },
+  "useCdn": false,
+  "cdnUrl": "",
+  "aiModules": [],
+  "productFeatures": [
+    "Text-to-image and image-to-image generation",
+    "1K, 2K, and 4K output tiers",
+    "Commercial-use image exports without watermarks",
+    "Credit-based pricing with no subscription"
+  ],
+  "theme": {
+    "preset": "custom",
+    "mode": "dark",
+    "light": {
+      "backgroundColor": "#ffffff",
+      "primaryColor": "#7c5cfc",
+      "textColor": "#1f2937",
+      "secondaryColor": "#64748b",
+      "accentColor": "#38bdf8"
+    },
+    "dark": {
+      "backgroundColor": "#0a0a0f",
+      "primaryColor": "#7c5cfc",
+      "textColor": "#f1f0ff",
+      "secondaryColor": "#8b8aa0",
+      "accentColor": "#38bdf8"
+    }
+  }
+}
