@@ -93,14 +93,14 @@ export function ImagePreview({
 
     if (!activeItem && limitedPlaylist.length === 0) {
         return (
-            <div className={`w-full ${className || ""} bg-muted rounded-xl aspect-[4/3] flex items-center justify-center text-muted-foreground`}>
+            <div className={`w-full ${className || ""} bg-card rounded-xl aspect-[4/3] flex items-center justify-center text-muted-foreground`}>
                 No images to display
             </div>
         );
     }
 
     const PendingPlaceholder = ({ msg, prompt }: { msg?: string; prompt?: string }) => (
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-muted/80 backdrop-blur-sm">
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-card/90 backdrop-blur-sm">
             <div className="flex flex-col items-center gap-3 px-6 text-center">
                 <Loader2 className="w-8 h-8 text-primary animate-spin" />
                 <span className="text-sm font-medium text-foreground">{msg || "Generating..."}</span>
@@ -114,7 +114,7 @@ export function ImagePreview({
     return (
         <div className={`w-full flex flex-col gap-4 ${fitContainer ? "flex-1 min-h-0" : ""} ${className || ""}`}>
             {/* Main Image Display */}
-            <div className={`relative w-full ${fitContainer ? "flex-1 min-h-0" : "aspect-[4/3]"} rounded-xl overflow-hidden group`}>
+            <div className={`relative w-full bg-card ${fitContainer ? "flex-1 min-h-0" : "aspect-[4/3]"} rounded-xl overflow-hidden group`}>
                 {showModelLabel && (
                     <div className="absolute top-3 left-3 z-20 text-white text-xs font-semibold tracking-wide bg-black/40 px-3 py-2 rounded-full backdrop-blur-sm uppercase">
                         {activeItem?.model || "Seedream"}
@@ -163,7 +163,7 @@ export function ImagePreview({
                                 }`}
                         >
                             {item.pending ? (
-                                <div className="w-full h-full bg-muted flex items-center justify-center">
+                                <div className="w-full h-full bg-card flex items-center justify-center">
                                     <Loader2 className="w-4 h-4 text-primary animate-spin" />
                                 </div>
                             ) : (
