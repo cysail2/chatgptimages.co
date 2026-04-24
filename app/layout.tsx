@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: seo.defaultTitle,
     description: seo.defaultDescription,
-    images: [{ url: "/og/home.png", width: 1200, height: 630 }],
+    images: [{ url: "/og/home.webp", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: seo.defaultTitle,
     description: seo.defaultDescription,
-    images: ["/og/home.png"],
+    images: ["/og/home.webp"],
   },
   robots: { index: true, follow: true },
 };

@@ -1,15 +1,15 @@
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 const items = [
-  { id: "gallery-portrait",     label: "Realistic Portrait",   span: "row-span-2" },
-  { id: "gallery-landscape",    label: "Cinematic Landscape",  span: "" },
-  { id: "gallery-scifi",        label: "Sci-Fi Concept",       span: "" },
-  { id: "gallery-anime",        label: "Anime Style",          span: "" },
-  { id: "gallery-product",      label: "Product Photography",  span: "" },
-  { id: "gallery-oil-painting", label: "Oil Painting",         span: "" },
-  { id: "gallery-abstract",     label: "Abstract Digital Art", span: "" },
-  { id: "gallery-food",         label: "Food Photography",     span: "" },
-];
+  { id: "real-result-cityscape", label: "Futuristic Cityscape" },
+  { id: "gallery-landscape",     label: "Cinematic Landscape" },
+  { id: "gallery-scifi",         label: "Sci-Fi Concept" },
+  { id: "gallery-anime",         label: "Anime Style" },
+  { id: "gallery-product",       label: "Product Photography" },
+  { id: "gallery-oil-painting",  label: "Oil Painting" },
+  { id: "gallery-abstract",      label: "Abstract Digital Art" },
+  { id: "gallery-food",          label: "Food Photography" },
+] as const;
 
 export function SeeInAction() {
   return (
@@ -27,14 +27,14 @@ export function SeeInAction() {
           prompt — no retouching, no post-processing, no external tools. These are the raw outputs.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[200px]">
-          {items.map(({ id, label, span }) => (
-            <div key={id} className={span}>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {items.map(({ id, label }) => (
+            <div key={id}>
               <ImagePlaceholder
                 resourceId={id}
                 alt={label}
-                aspectRatio="free"
-                className="h-full w-full"
+                aspectRatio="4/3"
+                className="w-full"
               />
             </div>
           ))}

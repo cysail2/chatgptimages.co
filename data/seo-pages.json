@@ -25,13 +25,13 @@
       "name": "Generator",
       "path": "/gpt-image-2",
       "keyword": "chatgpt images",
-      "wordMin": 1200
+      "wordMin": 1500
     },
     {
       "name": "Review",
       "path": "/gpt-image-2-review",
       "keyword": "chatgpt images",
-      "wordMin": 1500
+      "wordMin": 3000
     },
     {
       "name": "Pricing",

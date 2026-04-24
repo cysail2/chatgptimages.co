@@ -3,57 +3,62 @@
     {
       "id": "logo",
       "name": "Site Logo",
-      "path": "/logo.png",
+      "path": "/logo.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Minimal logo for 'ChatGPT Images', an AI image generation web app. Abstract geometric icon suggesting image creation — a stylized frame or pixel grid with a subtle gradient spark or light effect. Clean modern design, blue-purple gradient (#7c5cfc to #38bdf8), transparent background, simple icon, no text, vector-style, square format 512x512.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "og-home",
       "name": "OG Image — Home",
-      "path": "/og/home.png",
+      "path": "/og/home.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Images 2.0 Generator' homepage. Dark background (#0a0a0f) with blue-purple gradient glow. Bold white headline 'ChatGPT Images 2.0' with subtitle 'AI Image Generator — Realistic Photos & Creative Art'. Grid of 4 small AI-generated image thumbnails on the right side. Modern SaaS aesthetic, professional tech design.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "og-generator",
       "name": "OG Image — Generator",
-      "path": "/og/generator.png",
+      "path": "/og/generator.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Images 2.0 AI Image Generator' page. Dark background with purple gradient. Shows a stylized prompt input interface on the left ('A futuristic city at sunset...') and a generated image preview on the right. Headline 'ChatGPT Images 2.0 Generator'. Clean SaaS UI aesthetic.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "og-review",
       "name": "OG Image — Review",
-      "path": "/og/review.png",
+      "path": "/og/review.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Images 2.0 Review 2026'. Dark background, large gold star rating 4.8/5, bold headline 'ChatGPT Images 2.0 Review 2026' in white, green 'Recommended' verdict badge. Editorial design with subtle AI image grid in background. Professional tech review aesthetic.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "og-pricing",
       "name": "OG Image — Pricing",
-      "path": "/og/pricing.png",
+      "path": "/og/pricing.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Images 2.0 Pricing'. Dark background with three pricing card previews: Starter $9.90 (400 credits), Pro $29.90 (1300 credits), Max $99.90 (5000 credits, highlighted in purple). Headline 'Simple Credit Packs — No Subscription'. Professional SaaS pricing aesthetic.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-portrait",
@@ -61,10 +66,11 @@
       "path": "/images/gallery/portrait.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Photorealistic portrait of a young woman, soft studio lighting, shallow depth of field, clean white background, professional headshot style, ultra-detailed skin texture, natural makeup, warm smile. 1:1 square format, 4K quality.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-landscape",
@@ -72,10 +78,11 @@
       "path": "/images/gallery/landscape.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Cinematic landscape of a misty mountain valley at golden hour, dramatic clouds, god rays breaking through, epic wide shot, photorealistic, National Geographic style, 16:9 format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-product",
@@ -83,10 +90,11 @@
       "path": "/images/gallery/product.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Luxury perfume bottle on white marble surface, soft box studio lighting, macro lens, perfect reflections, high-end commercial product photography style, clean minimal background. 1:1 square format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-anime",
@@ -94,10 +102,11 @@
       "path": "/images/gallery/anime.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Anime-style illustration of a girl standing in a sunlit forest, Studio Ghibli aesthetic, soft watercolor tones, detailed background with dappled light, warm and magical atmosphere. 1:1 square format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-scifi",
@@ -105,10 +114,11 @@
       "path": "/images/gallery/scifi.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Futuristic sci-fi cityscape at night, towering neon-lit skyscrapers, flying vehicles, cyberpunk atmosphere, dramatic purple and blue lighting, photorealistic concept art style, 16:9 format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-oil-painting",
@@ -116,10 +126,11 @@
       "path": "/images/gallery/oil-painting.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Classic oil painting style portrait of a man in Renaissance clothing, rich warm tones, visible brushstrokes, dramatic Rembrandt-style lighting, museum quality artwork. 3:4 format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-architecture",
@@ -127,10 +138,11 @@
       "path": "/images/gallery/architecture.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Modern minimalist architecture exterior, concrete and glass building at blue hour, symmetrical composition, long exposure reflection in water pool, architectural photography style. 16:9 format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-food",
@@ -138,10 +150,11 @@
       "path": "/images/gallery/food.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Gourmet burger on a dark slate board, professional food photography, side lighting highlighting textures, sesame bun, fresh vegetables, melted cheese, bokeh background, appetizing and vibrant. 1:1 square format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "gallery-abstract",
@@ -149,10 +162,11 @@
       "path": "/images/gallery/abstract.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Abstract digital art, flowing liquid metal shapes in blue, purple and gold, ultra-detailed macro, surreal and dreamlike, high contrast, dark background, generative art aesthetic. 1:1 square format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "style-photorealistic",
@@ -160,10 +174,11 @@
       "path": "/images/styles/photorealistic.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Photorealistic close-up of morning dew drops on a green leaf, macro photography, ultra-sharp detail, natural diffuse light, vivid colors, nature photography style. 4:3 format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "style-anime",
@@ -171,10 +186,11 @@
       "path": "/images/styles/anime.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Vibrant anime-style illustration of a bustling Tokyo street market at night, neon signs, detailed crowd, colorful stalls, dramatic perspective, Makoto Shinkai inspired art style. 4:3 format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "style-oil-painting",
@@ -182,10 +198,11 @@
       "path": "/images/styles/oil-painting.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Impressionist oil painting of a Parisian café terrace in autumn, warm golden and orange tones, visible impasto brushwork, soft bokeh streetlights, romantic and nostalgic atmosphere. 4:3 format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "style-cyberpunk",
@@ -193,10 +210,11 @@
       "path": "/images/styles/cyberpunk.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Cyberpunk street scene, a lone figure in a rain-soaked alley, neon pink and blue reflections on wet pavement, steam vents, holographic advertisements, ultra-detailed, cinematic. 4:3 format.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "avatar-sarah",
@@ -204,10 +222,11 @@
       "path": "/images/avatars/sarah-m.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Professional headshot portrait, female digital marketing manager, early 30s, friendly confident expression, dark hair, business casual attire. Soft studio lighting, blurred neutral office background. Square format, photorealistic, LinkedIn-style.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "avatar-james",
@@ -215,10 +234,11 @@
       "path": "/images/avatars/james-k.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Professional headshot portrait, male UX designer mid 20s, creative casual look, light beard, glasses, relaxed smile, wearing a plain t-shirt. Bright natural lighting, blurred colorful workspace background. Square format, photorealistic, approachable.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "avatar-priya",
@@ -226,10 +246,11 @@
       "path": "/images/avatars/priya-s.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Professional headshot portrait, South Asian female content creator late 20s, warm smile, black hair, bright eyes, colorful creative top. Soft natural lighting, blurred vibrant background. Square format, photorealistic, approachable social media style.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "avatar-marco",
@@ -237,10 +258,11 @@
       "path": "/images/avatars/marco-l.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Professional headshot portrait, male graphic designer early 30s, Mediterranean appearance, short dark hair, creative confident expression, dark casual shirt. Soft studio lighting, blurred neutral background. Square format, photorealistic.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "avatar-emily",
@@ -248,10 +270,11 @@
       "path": "/images/avatars/emily-r.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Professional headshot portrait, female e-commerce entrepreneur, early 40s, professional yet approachable, blonde hair, business attire, confident smile. Clean bright studio lighting, white background. Square format, photorealistic.",
-      "isAIGenerated": false
+      "isAIGenerated": false,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "real-result-cityscape",
@@ -259,10 +282,11 @@
       "path": "/images/real-results/cityscape.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "A futuristic city at sunset, golden hour light reflecting off glass towers, flying vehicles in the sky, cinematic wide shot, photorealistic, 8K quality, ultra-detailed architecture.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "real-result-portrait",
@@ -281,10 +305,11 @@
       "path": "/images/real-results/product.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Luxury wristwatch floating on a dark reflective surface, water droplets splashing around it, dramatic spotlight, macro lens, commercial product photography, ultra-sharp detail.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     },
     {
       "id": "real-result-landscape",
@@ -292,10 +317,11 @@
       "path": "/images/real-results/landscape.webp",
       "sourceType": "managed",
       "kind": "image",
-      "status": "missing",
-      "exists": false,
+      "status": "generated",
+      "exists": true,
       "prompt": "Breathtaking mountain sunrise, pink and orange sky, snow-capped peaks, low cloud layer in the valley, drone perspective, epic wide angle, National Geographic photorealistic style.",
-      "isAIGenerated": true
+      "isAIGenerated": true,
+      "updatedAt": "2026-04-24"
     }
   ]
 }

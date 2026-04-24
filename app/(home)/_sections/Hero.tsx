@@ -9,11 +9,11 @@ const badges = [
 ];
 
 const galleryIds = [
-  "gallery-portrait",
   "gallery-landscape",
   "gallery-scifi",
   "gallery-anime",
   "gallery-product",
+  "gallery-abstract",
 ];
 
 export function Hero() {
@@ -76,14 +76,14 @@ export function Hero() {
       </div>
 
       {/* Sample image strip */}
-      <div className="relative flex gap-3 justify-center flex-wrap max-w-3xl">
+      <div className="relative grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 justify-center w-full max-w-5xl">
         {galleryIds.map((id) => (
           <ImagePlaceholder
             key={id}
             resourceId={id}
             alt="AI generated image example"
             aspectRatio="1/1"
-            className="w-[140px] md:w-[160px] shadow-lg"
+            className="w-full shadow-lg"
           />
         ))}
       </div>

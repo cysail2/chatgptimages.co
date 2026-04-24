@@ -5,7 +5,7 @@ export const site = {
   description:
     "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
   email: "support@chatgptimages.co",
-  logo: "/logo.png",
+  logo: "/logo.webp",
   logoAlt: "ChatGPT Images",
   favicon: "/favicon.ico",
 } as const;
