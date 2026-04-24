@@ -29,7 +29,9 @@ export const pricing = [
   {
     id: "starter",
     name: "Starter",
+    priceId: "price_chatgptimages_starter",
     price: 9.9,
+    priceAmount: 9.9,
     credits: 400,
     perCredit: 0.025,
     popular: false,
@@ -38,7 +40,9 @@ export const pricing = [
   {
     id: "pro",
     name: "Pro",
+    priceId: "price_chatgptimages_pro",
     price: 29.9,
+    priceAmount: 29.9,
     credits: 1300,
     perCredit: 0.023,
     popular: true,
@@ -47,7 +51,9 @@ export const pricing = [
   {
     id: "max",
     name: "Max",
+    priceId: "price_chatgptimages_max",
     price: 99.9,
+    priceAmount: 99.9,
     credits: 5000,
     perCredit: 0.02,
     popular: false,
@@ -56,3 +62,11 @@ export const pricing = [
 ] as const;
 
 export const registerBonus = 12;
+
+export type PaymentProvider = "stripe" | "creem" | "paypal" | "square";
+
+export const payment = {
+  provider: (process.env.NEXT_PUBLIC_PAYMENT_PROVIDER as PaymentProvider) || "stripe",
+  apiBase: process.env.NEXT_PUBLIC_API_BASE || "",
+  appId: process.env.NEXT_PUBLIC_APP_ID || "chatgptimages",
+} as const;

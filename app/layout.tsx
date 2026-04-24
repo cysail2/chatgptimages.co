@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { UserSyncProvider } from "@/components/UserSyncProvider";
 import { seo, site } from "@/lib/site";
 import "./globals.css";
 
@@ -42,9 +43,11 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={GeistSans.className}>
         <body className="min-h-screen flex flex-col" style={{ background: "var(--bg)", color: "var(--text)" }}>
-          <Navbar />
-          <main className="flex-1 pt-16">{children}</main>
-          <Footer />
+          <UserSyncProvider>
+            <Navbar />
+            <main className="flex-1 pt-16">{children}</main>
+            <Footer />
+          </UserSyncProvider>
         </body>
       </html>
     </ClerkProvider>

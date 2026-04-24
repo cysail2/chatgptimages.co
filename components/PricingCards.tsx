@@ -2,9 +2,10 @@
 
 import { useState, useCallback } from "react";
 import { Check, Loader2 } from "lucide-react";
-import { useUser, useClerk } from "@clerk/nextjs";
-import { pricing, registerBonus } from "@/lib/site";
 import Link from "next/link";
+import { useUser, useClerk } from "@clerk/nextjs";
+import { pricing, registerBonus, payment, type PaymentProvider } from "@/lib/site";
+import { services } from "@/lib/services";
 
 const planFeatures = [
   "All aspect ratios (1:1, 16:9, 9:16, 4:3, and more)",
@@ -15,6 +16,13 @@ const planFeatures = [
   "No watermarks on any export",
   "Credits never expire",
 ];
+
+async function startCheckout(provider: PaymentProvider, priceId: string) {
+  if (provider === "paypal") return services.pay.createPaypalSession(priceId);
+  if (provider === "creem") return services.pay.createCreemSession(priceId);
+  if (provider === "square") return services.pay.createSquareSession(priceId);
+  return services.pay.createStripeSession(priceId);
+}
 
 function PlanCard({ plan }: { plan: typeof pricing[number] }) {
   const { isSignedIn } = useUser();
@@ -30,11 +38,33 @@ function PlanCard({ plan }: { plan: typeof pricing[number] }) {
       return;
     }
 
-    // TODO: wire up checkout API when payment provider is configured
-    // const res = await fetch("/api/checkout", { method: "POST", body: JSON.stringify({ planId: plan.id }) });
-    // const { url } = await res.json();
-    // window.location.href = url;
-    alert("Payment coming soon. Contact support@chatgptimages.co to purchase.");
+    if (!services.auth.isTokenValid()) {
+      alert("Your session is still loading. Please wait a moment and try again.");
+      return;
+    }
+
+    if (!payment.apiBase) {
+      console.warn("NEXT_PUBLIC_API_BASE not configured — payment disabled");
+      alert("Payment is not yet available. Please contact support@chatgptimages.co.");
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const data = await startCheckout(payment.provider, plan.priceId);
+      const url = data?.data?.url || data?.url;
+      if (url) {
+        window.location.href = url;
+      } else {
+        console.error("Checkout response missing url:", data);
+        alert("Checkout unavailable. Please try again or contact support.");
+        setIsLoading(false);
+      }
+    } catch (err) {
+      console.error("Checkout failed:", err);
+      alert(err instanceof Error ? err.message : "Network error. Please try again.");
+      setIsLoading(false);
+    }
   }, [isSignedIn, openSignIn, plan]);
 
   return (
@@ -74,7 +104,7 @@ function PlanCard({ plan }: { plan: typeof pricing[number] }) {
         style={plan.popular ? {} : { border: "1px solid var(--border)", color: "var(--text)" }}
       >
         {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
-        Get {plan.name}
+        {isLoading ? "Processing..." : `Get ${plan.name}`}
       </button>
     </article>
   );
