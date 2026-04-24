@@ -3,9 +3,11 @@
 import { useState, useCallback } from "react";
 import { Check, Loader2 } from "lucide-react";
 import Link from "next/link";
-import { useUser, useClerk } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
+import { useUser } from "@clerk/nextjs";
 import { pricing, registerBonus, payment, type PaymentProvider } from "@/lib/site";
 import { services } from "@/lib/services";
+import { buildAuthRoute } from "@/lib/auth-routing";
 
 const planFeatures = [
   "All aspect ratios (1:1, 16:9, 9:16, 4:3, and more)",
@@ -26,7 +28,7 @@ async function startCheckout(provider: PaymentProvider, priceId: string) {
 
 function PlanCard({ plan }: { plan: typeof pricing[number] }) {
   const { isSignedIn } = useUser();
-  const { openSignIn } = useClerk();
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleBuy = useCallback(async () => {
@@ -34,7 +36,7 @@ function PlanCard({ plan }: { plan: typeof pricing[number] }) {
       try {
         localStorage.setItem("selectedPlan", JSON.stringify({ id: plan.id, name: plan.name, ts: Date.now() }));
       } catch {}
-      openSignIn();
+      router.push(buildAuthRoute({ mode: "sign-up", redirectUrl: "/pricing" }));
       return;
     }
 
@@ -65,7 +67,7 @@ function PlanCard({ plan }: { plan: typeof pricing[number] }) {
       alert(err instanceof Error ? err.message : "Network error. Please try again.");
       setIsLoading(false);
     }
-  }, [isSignedIn, openSignIn, plan]);
+  }, [isSignedIn, router, plan]);
 
   return (
     <article

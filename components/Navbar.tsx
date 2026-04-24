@@ -2,14 +2,17 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useUser, UserButton, SignInButton } from "@clerk/nextjs";
+import { useUser, UserButton } from "@clerk/nextjs";
 import { cn } from "@/lib/utils";
 import { site, nav } from "@/lib/site";
+import { buildAuthRoute } from "@/lib/auth-routing";
 import { Sparkles } from "lucide-react";
 
 export function Navbar() {
   const pathname = usePathname();
   const { isSignedIn } = useUser();
+  const signInHref = buildAuthRoute({ mode: "sign-in", redirectUrl: pathname });
+  const signUpHref = buildAuthRoute({ mode: "sign-up", redirectUrl: pathname });
 
   return (
     <header
@@ -52,15 +55,19 @@ export function Navbar() {
           </>
         ) : (
           <>
-            <SignInButton mode="modal">
-              <button
-                className="text-sm px-4 py-2 rounded-lg transition-colors"
-                style={{ color: "var(--muted)", border: "1px solid var(--border)" }}
-              >
-                Sign In
-              </button>
-            </SignInButton>
-            <Link href="/gpt-image-2" title="Try ChatGPT Images 2.0 Free" className="text-sm font-semibold px-4 py-2 rounded-lg grad-bg text-white">
+            <Link
+              href={signInHref}
+              title="Sign in to ChatGPT Images 2.0"
+              className="text-sm px-4 py-2 rounded-lg transition-colors hover:text-white"
+              style={{ color: "var(--muted)", border: "1px solid var(--border)" }}
+            >
+              Sign In
+            </Link>
+            <Link
+              href={signUpHref}
+              title="Create a free ChatGPT Images 2.0 account"
+              className="text-sm font-semibold px-4 py-2 rounded-lg grad-bg text-white"
+            >
               Try Free
             </Link>
           </>
