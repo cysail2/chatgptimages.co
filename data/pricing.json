@@ -2,7 +2,7 @@
   "plans": [
     {
       "key": "starter",
-      "priceId": "test_gpt-2",
+      "priceId": "price_1TPYoIEHH4trFZ1zLkH8zYM9",
       "popular": false,
       "title": "Starter",
       "price": "$9.90",
@@ -22,7 +22,7 @@
     },
     {
       "key": "pro",
-      "priceId": "test_gpt-3",
+      "priceId": "price_1TPYoWEHH4trFZ1zi9uO6ALK",
       "popular": false,
       "title": "Pro",
       "price": "$29.90",
@@ -42,7 +42,7 @@
     },
     {
       "key": "max",
-      "priceId": "test_gpt-1",
+      "priceId": "price_1TPYogEHH4trFZ1zaF23G3T7",
       "popular": true,
       "title": "Max",
       "price": "$99.90",
