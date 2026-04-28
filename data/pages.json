@@ -27,6 +27,56 @@
       "searchVisibility": "index",
       "priority": 0.8,
       "changefreq": "weekly"
+    },
+    {
+      "id": "pricing",
+      "title": "Pricing",
+      "path": "/pricing",
+      "group": "pricing",
+      "visibility": "public",
+      "searchVisibility": "index",
+      "priority": 0.8,
+      "changefreq": "weekly"
+    },
+    {
+      "id": "gpt-image-2-prompts-tutorial",
+      "title": "Prompts Tutorial",
+      "path": "/gpt-image-2-prompts-tutorial",
+      "group": "guide",
+      "visibility": "public",
+      "searchVisibility": "index",
+      "priority": 0.7,
+      "changefreq": "monthly"
+    },
+    {
+      "id": "gpt-image-2-vs-gpt-image-1",
+      "title": "GPT Image 2 vs GPT Image 1",
+      "path": "/gpt-image-2-vs-gpt-image-1",
+      "group": "comparison",
+      "visibility": "public",
+      "searchVisibility": "index",
+      "priority": 0.7,
+      "changefreq": "monthly"
+    },
+    {
+      "id": "gpt-image-2-vs-nano-banana-2",
+      "title": "GPT Image 2 vs Nano Banana 2",
+      "path": "/gpt-image-2-vs-nano-banana-2",
+      "group": "comparison",
+      "visibility": "public",
+      "searchVisibility": "index",
+      "priority": 0.7,
+      "changefreq": "monthly"
+    },
+    {
+      "id": "gpt-image-2-showcase",
+      "title": "Showcase",
+      "path": "/gpt-image-2-showcase",
+      "group": "showcase",
+      "visibility": "public",
+      "searchVisibility": "index",
+      "priority": 0.7,
+      "changefreq": "monthly"
     }
   ]
 }

@@ -109,6 +109,7 @@ export interface MobileNavItem {
   href: string;
   icon: string;  // lucide-react icon name (e.g., "Home", "Tag", "User", "house", "tag")
   visible: boolean;
+  matchExact?: boolean;
   order?: number;
   placement?: "bar" | "right-floating";
   showLabel?: boolean;
@@ -129,6 +130,7 @@ export interface NavigationConfig {
   footerNav: {
     resources: FooterNavItem[];
     legal: FooterNavItem[];
+    compare?: FooterNavItem[];
   };
   mobileNav?: MobileNavItem[];
 }

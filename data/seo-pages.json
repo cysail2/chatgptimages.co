@@ -15,7 +15,7 @@
     {
       "name": "Home",
       "path": "/",
-      "keyword": "chatgpt images",
+      "keyword": "ChatGPT Image",
       "wordMin": 2000,
       "h2Min": 10,
       "h3Min": 20,
@@ -24,21 +24,45 @@
     {
       "name": "Generator",
       "path": "/gpt-image-2",
-      "keyword": "chatgpt images",
+      "keyword": "GPT Image 2",
       "wordMin": 1500
     },
     {
       "name": "Review",
       "path": "/gpt-image-2-review",
-      "keyword": "chatgpt images",
+      "keyword": "GPT Image 2 Review",
       "wordMin": 3000
     },
     {
       "name": "Pricing",
       "path": "/pricing",
-      "keyword": "chatgpt images",
+      "keyword": "GPT Image 2 Pricing",
       "wordMin": 500,
       "h2Min": 4
+    },
+    {
+      "name": "Prompts Tutorial",
+      "path": "/gpt-image-2-prompts-tutorial",
+      "keyword": "GPT Image 2 Prompts Tutorial",
+      "wordMin": 1000
+    },
+    {
+      "name": "GPT Image 2 vs GPT Image 1",
+      "path": "/gpt-image-2-vs-gpt-image-1",
+      "keyword": "GPT Image 2 VS 1",
+      "wordMin": 1000
+    },
+    {
+      "name": "GPT Image 2 vs Nano Banana 2",
+      "path": "/gpt-image-2-vs-nano-banana-2",
+      "keyword": "GPT Image 2 VS 2",
+      "wordMin": 1000
+    },
+    {
+      "name": "Showcase",
+      "path": "/gpt-image-2-showcase",
+      "keyword": "GPT Image 2 Showcase",
+      "wordMin": 1000
     }
   ],
   "siteFiles": [

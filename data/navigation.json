@@ -1,19 +1,11 @@
 {
   "mainNav": [
     {
-      "id": "home",
-      "label": "Home",
-      "href": "/",
-      "matchPath": "/",
-      "matchExact": true,
-      "visible": true,
-      "order": 0
-    },
-    {
       "id": "generator",
       "label": "Generator",
       "href": "/gpt-image-2",
       "matchPath": "/gpt-image-2",
+      "matchExact": true,
       "visible": true,
       "order": 1
     },
@@ -26,31 +18,91 @@
       "order": 2
     },
     {
+      "id": "prompts-tutorial",
+      "label": "Prompt Guide",
+      "href": "/gpt-image-2-prompts-tutorial",
+      "matchPath": "/gpt-image-2-prompts-tutorial",
+      "visible": true,
+      "order": 3
+    },
+    {
+      "id": "comparisons",
+      "label": "Comparisons",
+      "href": "#",
+      "matchPath": "/gpt-image-2-vs-",
+      "visible": true,
+      "order": 4,
+      "children": [
+        {
+          "id": "vs-gpt-image-1",
+          "label": "GPT Image 2 vs GPT Image 1",
+          "href": "/gpt-image-2-vs-gpt-image-1",
+          "matchPath": "/gpt-image-2-vs-gpt-image-1",
+          "visible": true,
+          "order": 0
+        },
+        {
+          "id": "vs-nano-banana-2",
+          "label": "GPT Image 2 vs Nano Banana 2",
+          "href": "/gpt-image-2-vs-nano-banana-2",
+          "matchPath": "/gpt-image-2-vs-nano-banana-2",
+          "visible": true,
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "showcase",
+      "label": "Showcase",
+      "href": "/gpt-image-2-showcase",
+      "matchPath": "/gpt-image-2-showcase",
+      "visible": true,
+      "order": 5
+    },
+    {
       "id": "pricing",
       "label": "Pricing",
       "href": "/pricing",
       "matchPath": "/pricing",
       "visible": true,
-      "order": 3
+      "order": 6
     }
   ],
   "footerNav": {
     "resources": [
       {
-        "label": "Home",
+        "label": "ChatGPT Image",
         "href": "/"
       },
       {
-        "label": "Generator",
+        "label": "GPT Image 2",
         "href": "/gpt-image-2"
       },
       {
-        "label": "Review",
+        "label": "GPT Image 2 Review",
         "href": "/gpt-image-2-review"
       },
       {
-        "label": "Pricing",
+        "label": "GPT Image 2 Prompts Tutorial",
+        "href": "/gpt-image-2-prompts-tutorial"
+      },
+      {
+        "label": "GPT Image 2 Showcase",
+        "href": "/gpt-image-2-showcase"
+      },
+      {
+        "label": "GPT Image 2 Pricing",
         "href": "/pricing"
+      }
+    ],
+    "compare": [
+      {
+        "label": "GPT Image 2 vs GPT Image 1",
+        "href": "/gpt-image-2-vs-gpt-image-1"
+      },
+      {
+        "label": "GPT Image 2 vs Nano Banana 2",
+        "href": "/gpt-image-2-vs-nano-banana-2"
       }
     ],
     "legal": [
@@ -84,6 +136,7 @@
       "href": "/gpt-image-2",
       "icon": "ImageIcon",
       "visible": true,
+      "matchExact": true,
       "order": 2,
       "placement": "bar"
     },
@@ -93,6 +146,7 @@
       "href": "/gpt-image-2-review",
       "icon": "Star",
       "visible": true,
+      "matchExact": true,
       "order": 3,
       "placement": "bar"
     },

@@ -14,10 +14,16 @@ import { CTA } from "./_sections/CTA";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "ChatGPT Images 2.0 Generator — Realistic AI Photos & Art",
+    absolute: "ChatGPT Image - AI Image Generator for Photos and Art",
   },
   description:
-    "ChatGPT Images 2.0 is an AI image generator. Create realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
+    "ChatGPT Image helps you create realistic AI photos, product visuals, and artwork from text prompts for marketing, design, and content.",
+  keywords: [
+    "ChatGPT Image",
+    "ChatGPT image generator",
+    "AI image generator",
+    "text to image AI",
+  ],
   alternates: { canonical: "/" },
 };
 

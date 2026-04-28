@@ -6,10 +6,16 @@ import { pricing, registerBonus, site } from "../_shared/site-content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "ChatGPT Images 2.0 Pricing — Credit Packs, No Subscription",
+    absolute: "GPT Image 2 Pricing - Credit Packs, No Subscription",
   },
   description:
-    "ChatGPT Images 2.0 uses simple credit packs starting at $9.90. No subscription, no expiry. See per-image costs, resolution tiers, and what each pack covers.",
+    "GPT Image 2 pricing uses simple credit packs starting at $9.90. No subscription, no expiry. See per-image costs and resolution tiers.",
+  keywords: [
+    "GPT Image 2 Pricing",
+    "GPT Image 2 price",
+    "GPT Image 2 cost",
+    "AI image generator pricing",
+  ],
   alternates: { canonical: "/pricing" },
   openGraph: {
     images: [{ url: "/og/pricing.webp", width: 1200, height: 630 }],
@@ -67,7 +73,7 @@ function PricingJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "ChatGPT Images 2.0 — AI Image Generator",
+    name: "GPT Image 2 - AI Image Generator",
     url: site.url,
     description:
       "Credit-based AI image generator. Create realistic photos, product shots, concept art, and social visuals from text prompts. No subscription required.",
@@ -133,7 +139,7 @@ export default function PricingPage() {
             Simple credit packs. No subscription required.
           </h1>
           <p className="text-lg md:text-xl leading-relaxed mb-4" style={{ color: "var(--muted)" }}>
-            ChatGPT Images 2.0 runs on a credit model — buy once, use at your own pace.
+            GPT Image 2 runs on a credit model — buy once, use at your own pace.
             Credits never expire and there is no automatic renewal.
           </p>
           <p className="text-sm font-semibold mb-10" style={{ color: "var(--accent)" }}>
@@ -142,7 +148,7 @@ export default function PricingPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/sign-up"
-              title="Create a free ChatGPT Images 2.0 account"
+              title="Create a free GPT Image 2 account"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold text-white grad-bg"
             >
               Start free
@@ -150,7 +156,7 @@ export default function PricingPage() {
             </Link>
             <Link
               href="/gpt-image-2"
-              title="View the ChatGPT Images 2.0 generator"
+              title="View the GPT Image 2 generator"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base transition-colors"
               style={{ border: "1px solid var(--border)", color: "var(--muted)" }}
             >
@@ -167,7 +173,7 @@ export default function PricingPage() {
             Credit Packs
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-            ChatGPT Images 2.0 credit pack pricing
+            GPT Image 2 credit pack pricing
           </h2>
           <p className="text-center text-lg mb-14 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
             Three packs sized for different usage levels. All packs include the same features —
@@ -240,7 +246,7 @@ export default function PricingPage() {
             Why ChatGPT Images uses credit packs instead of subscriptions
           </h2>
           <p className="text-center text-lg mb-14 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
-            Most image tools force a subscription even when usage is irregular. ChatGPT Images 2.0
+            Most image tools force a subscription even when usage is irregular. GPT Image 2
             uses a credit model because creative work does not happen on a fixed monthly schedule.
           </p>
           <div className="grid md:grid-cols-3 gap-5">
@@ -334,7 +340,7 @@ export default function PricingPage() {
             FAQ
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-            Frequently asked questions about ChatGPT Images pricing
+            Frequently asked questions about GPT Image 2 pricing
           </h2>
           <p className="text-center text-lg mb-12 max-w-xl mx-auto" style={{ color: "var(--muted)" }}>
             Common questions about credit packs, per-image costs, refunds, and what's included.
@@ -359,7 +365,7 @@ export default function PricingPage() {
       <section className="py-24 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-5">
-            Ready to start generating with ChatGPT Images 2.0?
+            Ready to start generating with GPT Image 2?
           </h2>
           <p className="text-lg leading-relaxed mb-8" style={{ color: "var(--muted)" }}>
             Create a free account, collect your {registerBonus} signup credits, and try the generator

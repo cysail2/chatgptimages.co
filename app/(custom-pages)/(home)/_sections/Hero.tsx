@@ -29,18 +29,18 @@ export function Hero() {
       <div className="relative inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 text-sm font-medium"
         style={{ background: "rgba(124,92,252,0.12)", border: "1px solid rgba(124,92,252,0.3)", color: "var(--accent)" }}>
         <span className="w-2 h-2 rounded-full bg-current animate-pulse" />
-        Powered by ChatGPT Images 2.0
+        Powered by ChatGPT Image
       </div>
 
       {/* H1 */}
       <h1 className="relative text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.08] max-w-4xl mb-6">
-        Create Stunning AI Images{" "}
+        ChatGPT Image Generator{" "}
         <span className="grad-text">in Seconds</span>
       </h1>
 
       {/* Description */}
       <p className="relative text-lg md:text-xl max-w-xl mb-10 leading-relaxed" style={{ color: "var(--muted)" }}>
-        ChatGPT Images 2.0 turns any text prompt into realistic photos and
+        ChatGPT Image turns any text prompt into realistic photos and
         creative artwork — for marketing, design, and content.
       </p>
 
@@ -48,10 +48,10 @@ export function Hero() {
       <div className="relative flex flex-wrap items-center justify-center gap-4 mb-12">
         <Link
           href="/gpt-image-2"
-          title="Try ChatGPT Images 2.0 Generator Free"
+          title="Try ChatGPT Image Generator Free"
           className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold text-white grad-bg"
         >
-          Try ChatGPT Images 2.0 Free
+          Try ChatGPT Image Free
           <ArrowRight className="w-4 h-4" />
         </Link>
         <Link

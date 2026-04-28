@@ -18,10 +18,16 @@ import { pricing, registerBonus, site } from "../_shared/site-content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "ChatGPT Images 2.0 Review 2026 - Is It Worth It?",
+    absolute: "GPT Image 2 Review 2026 - Is It Worth It?",
   },
   description:
-    "Read our ChatGPT Images 2.0 review for image quality, prompt control, pricing, limits, use cases, and whether the AI generator is worth using in 2026.",
+    "Read our GPT Image 2 review for image quality, prompt control, pricing, limits, use cases, and whether the AI generator is worth using in 2026.",
+  keywords: [
+    "GPT Image 2 Review",
+    "GPT Image 2 review 2026",
+    "GPT Image 2",
+    "AI image generator review",
+  ],
   alternates: { canonical: "/gpt-image-2-review" },
 };
 
@@ -225,7 +231,7 @@ function ReviewJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Review",
-    name: "ChatGPT Images 2.0 Review 2026",
+    name: "GPT Image 2 Review 2026",
     url: `${site.url}/gpt-image-2-review`,
     datePublished: "2026-04-24T00:00:00Z",
     dateModified: "2026-04-24T00:00:00Z",
@@ -236,7 +242,7 @@ function ReviewJsonLd() {
     },
     itemReviewed: {
       "@type": "SoftwareApplication",
-      name: "ChatGPT Images 2.0 Generator",
+      name: "GPT Image 2 Generator",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Web",
       url: `${site.url}/gpt-image-2`,
@@ -335,17 +341,17 @@ export default function ReviewPage() {
               Independent product review
             </p>
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.04] mb-6">
-              ChatGPT Images 2.0 Review 2026: is it worth using?
+              GPT Image 2 Review 2026: is it worth using?
             </h1>
             <p className="text-lg md:text-xl leading-relaxed mb-8" style={{ color: "var(--muted)" }}>
-              This ChatGPT Images 2.0 review tests the generator as a practical production tool, not just a novelty demo.
+              This GPT Image 2 review tests the generator as a practical production tool, not just a novelty demo.
               We looked at image quality, prompt control, commercial usefulness, pricing, workflow speed, and the failure
               cases that matter when a visual is going into a real campaign, landing page, or client presentation.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/gpt-image-2"
-                title="Open the ChatGPT Images 2.0 generator"
+              title="Open the GPT Image 2 generator"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold text-white grad-bg"
               >
                 Try the generator
@@ -364,7 +370,7 @@ export default function ReviewPage() {
           <div className="rounded-2xl overflow-hidden" style={{ background: "var(--surface)", border: "1px solid var(--border2)" }}>
             <ImagePlaceholder
               resourceId="og-review"
-              alt="ChatGPT Images 2.0 review summary"
+              alt="GPT Image 2 review summary"
               aspectRatio="16/9"
               className="rounded-none"
             />

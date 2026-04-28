@@ -42,10 +42,14 @@ export async function Footer({ friendlyLinks = [] }: FooterProps) {
     );
   };
 
+  const compareItems = navConfig?.footerNav?.compare ?? [];
+  const hasCompare = compareItems.length > 0;
+  const gridColsClass = hasCompare ? "md:grid-cols-4" : "md:grid-cols-3";
+
   return (
     <footer className={`py-12 border-t bg-background border-border`}>
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className={`grid grid-cols-1 ${gridColsClass} gap-8`}>
           {/* Logo & Copyright */}
           <div className="md:col-span-1">
             <LogoServer
@@ -88,6 +92,31 @@ export async function Footer({ friendlyLinks = [] }: FooterProps) {
               </div>
             )}
           </div>
+
+          {/* Compare (optional) */}
+          {hasCompare && (
+            <div className="md:col-span-1">
+              <div className="font-semibold text-lg mb-4 text-foreground">
+                Compare
+              </div>
+              <ul className="space-y-2">
+                {filterNavItems(compareItems).map(
+                  (item: FooterNavItem, index: number) => (
+                    <li key={index}>
+                      <Link
+                        href={item.href}
+                        title={item.title || item.label}
+                        rel={item.follow === false ? "nofollow" : undefined}
+                        className="transition-colors duration-200 text-sm text-muted-foreground hover:text-primary"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+          )}
 
           {/* Resources */}
           <div className="md:col-span-1">

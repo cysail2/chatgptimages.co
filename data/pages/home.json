@@ -2,13 +2,13 @@
   "id": "home",
   "name": "Home",
   "metadata": {
-    "title": "ChatGPT Images",
-    "description": "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
-    "keywords": "",
+    "title": "ChatGPT Image - AI Image Generator for Photos and Art",
+    "description": "ChatGPT Image helps you create realistic AI photos, product visuals, and artwork from text prompts for marketing, design, and content.",
+    "keywords": "ChatGPT Image, ChatGPT image generator, AI image generator, text to image AI",
     "canonical": "",
     "og": {
-      "title": "ChatGPT Images",
-      "description": "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
+      "title": "ChatGPT Image - AI Image Generator for Photos and Art",
+      "description": "ChatGPT Image helps you create realistic AI photos, product visuals, and artwork from text prompts for marketing, design, and content.",
       "type": "website",
       "image": "",
       "url": "https://chatgptimages.co"
@@ -17,8 +17,8 @@
       "card": "summary_large_image",
       "site": "",
       "image": "",
-      "description": "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
-      "title": "ChatGPT Images"
+      "description": "ChatGPT Image helps you create realistic AI photos, product visuals, and artwork from text prompts for marketing, design, and content.",
+      "title": "ChatGPT Image - AI Image Generator for Photos and Art"
     },
     "robots": [],
     "hreflang": {}

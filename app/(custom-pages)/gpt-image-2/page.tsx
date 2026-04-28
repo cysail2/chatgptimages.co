@@ -15,10 +15,16 @@ import { pricing, registerBonus, site } from "../_shared/site-content";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "ChatGPT Images 2.0 Generator - Text to Image AI Tool",
+    absolute: "GPT Image 2 Generator - Text to Image AI Tool",
   },
   description:
-    "Use the ChatGPT Images 2.0 generator to create realistic AI photos, product shots, concept art, and social visuals from detailed text prompts.",
+    "Use GPT Image 2 to create realistic AI photos, product shots, concept art, and social visuals from detailed text prompts.",
+  keywords: [
+    "GPT Image 2",
+    "GPT Image 2 generator",
+    "GPT Image 2 AI image generator",
+    "text to image AI",
+  ],
   alternates: { canonical: "/gpt-image-2" },
 };
 
@@ -169,7 +175,7 @@ function JsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "ChatGPT Images 2.0 Generator",
+    name: "GPT Image 2 Generator",
     applicationCategory: "MultimediaApplication",
     operatingSystem: "Web",
     url: `${site.url}/gpt-image-2`,
@@ -245,7 +251,7 @@ export default function GeneratorPage() {
                 }}
               >
                 <Sparkles className="h-4 w-4" />
-                ChatGPT Images 2.0 Generator
+                GPT Image 2 Generator
               </p>
               <h1 className="text-5xl font-extrabold tracking-tight md:text-6xl lg:text-7xl lg:leading-tight">
                 Generate AI images from prompts with production control
@@ -254,14 +260,14 @@ export default function GeneratorPage() {
                 className="mx-auto mt-6 max-w-4xl text-lg leading-relaxed md:text-xl"
                 style={{ color: "var(--muted)" }}
               >
-                The ChatGPT Images 2.0 generator helps marketers, designers, creators, and founders create realistic
+                The GPT Image 2 generator helps marketers, designers, creators, and founders create realistic
                 AI photos, product shots, concept art, thumbnails, and campaign visuals from a clear text prompt.
                 Start with free credits, refine your result, and export images without a watermark.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <Link
                   href="/sign-up"
-                  title="Start using the ChatGPT Images 2.0 Generator"
+                  title="Start using the GPT Image 2 Generator"
                   className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-base font-bold text-white grad-bg"
                 >
                   Start generating free
@@ -269,7 +275,7 @@ export default function GeneratorPage() {
                 </Link>
                 <Link
                   href="/pricing"
-                  title="View ChatGPT Images 2.0 pricing"
+                  title="View GPT Image 2 pricing"
                   className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-base transition-colors"
                   style={{ border: "1px solid var(--border)", color: "var(--muted)" }}
                 >
@@ -288,8 +294,8 @@ export default function GeneratorPage() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader
             eyebrow="Capabilities"
-            title="What the ChatGPT Images generator can create"
-            text="A good image generator page should show more than a blank text box. This page explains the practical controls behind ChatGPT Images 2.0 and the production cases it is built for."
+            title="What the GPT Image 2 generator can create"
+            text="A good image generator page should show more than a blank text box. This page explains the practical controls behind GPT Image 2 and the production cases it is built for."
           />
           <div className="grid md:grid-cols-2 gap-4">
             {capabilityGroups.map(({ icon: Icon, title, text }) => (
@@ -328,7 +334,7 @@ export default function GeneratorPage() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader
             eyebrow="Workflow"
-            title="How to use ChatGPT Images 2.0 for production work"
+            title="How to use GPT Image 2 for production work"
             text="The generator is most useful when it becomes a repeatable creative workflow. Treat each prompt as a brief, each output as a draft, and each revision as a controlled iteration."
           />
           <div className="grid md:grid-cols-4 gap-4">
@@ -355,7 +361,7 @@ export default function GeneratorPage() {
               Technical specs for the image generator
             </h2>
             <p className="text-lg leading-relaxed mb-6" style={{ color: "var(--muted)" }}>
-              ChatGPT Images 2.0 is designed for quick drafting and high quality final exports. Use lower cost
+              GPT Image 2 is designed for quick drafting and high quality final exports. Use lower cost
               generations to explore direction, then move to higher detail settings once the creative concept is locked.
             </p>
             <Link href="/pricing" title="Compare ChatGPT Images 2.0 credit pricing" className="inline-flex items-center gap-2 font-semibold" style={{ color: "var(--accent)" }}>
@@ -459,7 +465,7 @@ export default function GeneratorPage() {
       <section className="py-24 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-5">
-            Ready to create with ChatGPT Images 2.0?
+            Ready to create with GPT Image 2?
           </h2>
           <p className="text-lg leading-relaxed mb-8" style={{ color: "var(--muted)" }}>
             Open the generator, write a focused prompt, and create your first set of AI images for a campaign,

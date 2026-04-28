@@ -79,8 +79,8 @@ export function MobileBottomNav({ navConfig, className }: MobileBottomNavProps) 
         const isAiStudioAction = item.action === "open-ai-studio";
         const isActive = isAiStudioAction
             ? isOpen && (!item.aiStudioModel || activeModel === item.aiStudioModel)
-            : item.href === "/"
-                ? pathname === "/"
+            : item.matchExact || item.href === "/"
+                ? pathname === item.href
                 : pathname.startsWith(item.href);
 
         if (isPopoverItem) {
