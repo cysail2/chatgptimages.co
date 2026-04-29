@@ -3,9 +3,9 @@ import Link from "next/link";
 import { site } from "../_shared/site-content";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | ChatGPT Images",
+  title: "Terms of Service | ChatGPT Image",
   description:
-    "Read the ChatGPT Images Terms of Service. Understand permitted use, content policy, credit rules, and limitations of the AI image generator.",
+    "Read the ChatGPT Image Terms of Service. Understand permitted use, content policy, credit rules, and limitations of the AI image generator.",
   alternates: { canonical: "/terms" },
   robots: { index: true, follow: true },
 };
@@ -32,7 +32,7 @@ export default function TermsPage() {
             <p className="leading-relaxed">
               By accessing or using {site.url} (the &quot;Service&quot;) you agree to be bound by these
               Terms of Service and our{" "}
-              <Link href="/privacy" title="ChatGPT Images Privacy Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
+              <Link href="/privacy" title="ChatGPT Image Privacy Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
                 Privacy Policy
               </Link>. If you do not agree, do not use the Service.
               These terms form a binding agreement between you and {site.name}.
@@ -146,7 +146,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold mb-4 text-white">8. Refunds</h2>
             <p className="leading-relaxed">
               Refund requests must be submitted within 7 days of purchase. See our{" "}
-              <Link href="/refund" title="ChatGPT Images Refund Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
+              <Link href="/refund" title="ChatGPT Image Refund Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
                 Refund Policy
               </Link>{" "}
               for complete details. We reserve the right to deny refunds for accounts found
@@ -209,10 +209,10 @@ export default function TermsPage() {
         </div>
 
         <div className="mt-16 pt-8 flex gap-6 text-sm" style={{ borderTop: "1px solid var(--border)", color: "var(--muted2)" }}>
-          <Link href="/privacy" title="ChatGPT Images Privacy Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
+          <Link href="/privacy" title="ChatGPT Image Privacy Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
             Privacy Policy
           </Link>
-          <Link href="/refund" title="ChatGPT Images Refund Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
+          <Link href="/refund" title="ChatGPT Image Refund Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
             Refund Policy
           </Link>
         </div>

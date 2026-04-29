@@ -36,11 +36,11 @@ const creditCosts = [
 
 const faqs = [
   {
-    q: "Do ChatGPT Images credits expire?",
+    q: "Do ChatGPT Image credits expire?",
     a: "No. Credits never expire regardless of the pack you purchase. Use them over days, weeks, or months — there is no time pressure and no forced renewal.",
   },
   {
-    q: "Is there a subscription for ChatGPT Images 2.0?",
+    q: "Is there a subscription for ChatGPT Image 2.0?",
     a: "There is no subscription. You buy a credit pack once and use it at your own pace. When you need more credits, you purchase another pack. There is no automatic renewal, no monthly billing, and no cancellation needed.",
   },
   {
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Can I use the images commercially?",
-    a: "Yes. Every image generated with ChatGPT Images 2.0 is yours to use in commercial projects — marketing campaigns, client deliverables, product pages, ad creatives, social content, presentations, and more. There are no watermarks, no attribution requirements, and no licensing fees beyond the credit cost.",
+    a: "Yes. Every image generated with ChatGPT Image 2.0 is yours to use in commercial projects — marketing campaigns, client deliverables, product pages, ad creatives, social content, presentations, and more. There are no watermarks, no attribution requirements, and no licensing fees beyond the credit cost.",
   },
   {
     q: "What happens if I need a refund?",
@@ -77,6 +77,7 @@ function PricingJsonLd() {
     url: site.url,
     description:
       "Credit-based AI image generator. Create realistic photos, product shots, concept art, and social visuals from text prompts. No subscription required.",
+    image: `${site.url}/og/home.webp`,
     brand: { "@type": "Brand", name: site.name },
     offers: pricing.map((plan) => ({
       "@type": "Offer",
@@ -85,7 +86,7 @@ function PricingJsonLd() {
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url: `${site.url}/pricing`,
-      description: `${plan.credits} ChatGPT Images 2.0 credits at $${plan.perCredit.toFixed(3)} per credit. ${plan.description}`,
+      description: `${plan.credits} ChatGPT Image 2.0 credits at $${plan.perCredit.toFixed(3)} per credit. ${plan.description}`,
     })),
     aggregateRating: {
       "@type": "AggregateRating",
@@ -243,7 +244,7 @@ export default function PricingPage() {
             No Subscription
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-            Why ChatGPT Images uses credit packs instead of subscriptions
+            Why ChatGPT Image uses credit packs instead of subscriptions
           </h2>
           <p className="text-center text-lg mb-14 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
             Most image tools force a subscription even when usage is irregular. GPT Image 2
@@ -288,7 +289,7 @@ export default function PricingPage() {
             What's Included
           </p>
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-            Everything included with every ChatGPT Images credit pack
+            Everything included with every ChatGPT Image credit pack
           </h2>
           <p className="text-center text-lg mb-14 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
             No features locked to higher tiers. Every pack includes the full set of generation
@@ -374,7 +375,7 @@ export default function PricingPage() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/sign-up"
-              title="Sign up for ChatGPT Images 2.0 free"
+              title="Sign up for ChatGPT Image 2.0 free"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold text-white grad-bg"
             >
               Create free account
@@ -382,7 +383,7 @@ export default function PricingPage() {
             </Link>
             <Link
               href="/gpt-image-2-review"
-              title="Read the ChatGPT Images 2.0 review"
+              title="Read the ChatGPT Image 2.0 review"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base transition-colors"
               style={{ border: "1px solid var(--border)", color: "var(--muted)" }}
             >

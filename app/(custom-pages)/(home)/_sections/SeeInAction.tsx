@@ -20,10 +20,10 @@ export function SeeInAction() {
           Gallery
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-          See ChatGPT Images 2.0 in Action
+          See ChatGPT Image 2.0 in Action
         </h2>
         <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
-          Every image below was generated directly by ChatGPT Images 2.0 from a single text
+          Every image below was generated directly by ChatGPT Image 2.0 from a single text
           prompt — no retouching, no post-processing, no external tools. These are the raw outputs.
         </p>
 
@@ -41,7 +41,7 @@ export function SeeInAction() {
         </div>
 
         <p className="text-center text-sm mt-8" style={{ color: "var(--muted2)" }}>
-          Gallery shows a sample of the styles ChatGPT Images 2.0 handles natively —
+          Gallery shows a sample of the styles ChatGPT Image 2.0 handles natively —
           photorealism, anime, oil painting, product photography, concept art, and more.
         </p>
       </div>

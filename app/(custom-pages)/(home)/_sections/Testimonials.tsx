@@ -58,7 +58,7 @@ export function Testimonials() {
           Reviews
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-          What Users Are Saying About ChatGPT Images 2.0
+          What Users Are Saying About ChatGPT Image 2.0
         </h2>
         <p className="text-center text-lg mb-14 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
           Thousands of marketers, designers, and content creators rely on the generator every day.

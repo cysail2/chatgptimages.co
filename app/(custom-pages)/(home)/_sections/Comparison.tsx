@@ -12,7 +12,7 @@ const rows = [
   { feature: "Free credits on signup", values: ["12 credits", "None", "None"] },
 ];
 
-const columns = ["ChatGPT Images 2.0", "Typical Pro Tool", "Free Tier Tools"];
+const columns = ["ChatGPT Image 2.0", "Typical Pro Tool", "Free Tier Tools"];
 
 function Cell({ value, highlight }: { value: boolean | string; highlight?: boolean }) {
   if (value === true) {
@@ -37,7 +37,7 @@ export function Comparison() {
           Comparison
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-          How ChatGPT Images 2.0 Compares to Alternatives
+          How ChatGPT Image 2.0 Compares to Alternatives
         </h2>
         <p className="text-center text-lg mb-12 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
           A head-to-head comparison between this generator and the two common alternatives —

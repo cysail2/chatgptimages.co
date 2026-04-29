@@ -42,7 +42,7 @@ const page: SeoContentPageData = {
   publishedAt: "2026-03-15",
   updatedAt: "2026-04-28",
   author: {
-    name: "ChatGPT Images Editorial",
+    name: "ChatGPT Image Editorial",
     url: "https://chatgptimages.co",
   },
   articleHeader: true,
@@ -381,7 +381,7 @@ const page: SeoContentPageData = {
     },
     {
       q: "Can I commercially use images generated with GPT Image 2?",
-      a: "Yes. GPT Image 2 outputs through ChatGPT Images are private by default and usable in ads, product pages, social posts, presentations, and editorial layouts without visible watermarks. Always confirm the latest commercial-use policy on your current plan before a major launch.",
+      a: "Yes. GPT Image 2 outputs through ChatGPT Image are private by default and usable in ads, product pages, social posts, presentations, and editorial layouts without visible watermarks. Always confirm the latest commercial-use policy on your current plan before a major launch.",
     },
     {
       q: "Where can I see live GPT Image 2 examples?",

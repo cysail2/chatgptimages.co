@@ -48,7 +48,7 @@ export function UseCases() {
           Audience
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-          Who Uses ChatGPT Images 2.0 — and What For
+          Who Uses ChatGPT Image 2.0 — and What For
         </h2>
         <p className="text-center text-lg mb-14 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
           From solo creators to in-house marketing teams, the tool fits wherever custom visuals

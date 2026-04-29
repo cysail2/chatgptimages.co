@@ -1,13 +1,13 @@
 {
   "site": {
-    "name": "ChatGPT Images",
+    "name": "ChatGPT Image",
     "logo": "/logo.webp",
-    "logoAlt": "ChatGPT Images logo",
+    "logoAlt": "ChatGPT Image logo",
     "logoWidth": 120,
     "logoHeight": 40,
     "url": "https://chatgptimages.co",
     "favicon": "/favicon.ico",
-    "description": "ChatGPT Images is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
+    "description": "ChatGPT Image is an AI image generator. It creates realistic photos and creative artwork for marketing, design, and content use with fast, simple control.",
     "siteType": "single"
   },
   "contact": {
@@ -17,7 +17,7 @@
   },
   "seo": {
     "defaultTitle": "ChatGPT Image - AI Image Generator for Photos and Art",
-    "titleTemplate": "%s | ChatGPT Images",
+    "titleTemplate": "%s | ChatGPT Image",
     "defaultDescription": "ChatGPT Image helps you create realistic AI photos, product visuals, and artwork from text prompts for marketing, design, and content.",
     "defaultKeywords": "ChatGPT Image, GPT Image 2, GPT Image 2 Review, GPT Image 2 Pricing, GPT Image 2 Prompts Tutorial, GPT Image 2 Showcase"
   },

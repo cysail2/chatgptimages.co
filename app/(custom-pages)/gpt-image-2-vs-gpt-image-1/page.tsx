@@ -39,7 +39,7 @@ const page: SeoContentPageData = {
   publishedAt: "2026-04-01",
   updatedAt: "2026-04-28",
   author: {
-    name: "ChatGPT Images Editorial",
+    name: "ChatGPT Image Editorial",
     url: "https://chatgptimages.co",
   },
   articleHeader: true,

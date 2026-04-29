@@ -202,7 +202,7 @@ const buyingChecklist = [
 
 const faqs = [
   {
-    q: "Is ChatGPT Images 2.0 worth using in 2026?",
+    q: "Is ChatGPT Image 2.0 worth using in 2026?",
     a: "Yes, if you need fast visual production for marketing, design, content, or product concepts. It is especially useful when you can write clear briefs and review outputs carefully before publishing.",
   },
   {
@@ -237,7 +237,7 @@ function ReviewJsonLd() {
     dateModified: "2026-04-24T00:00:00Z",
     author: {
       "@type": "Person",
-      name: "ChatGPT Images Editorial Team",
+      name: "ChatGPT Image Editorial Team",
       url: site.url,
     },
     itemReviewed: {
@@ -359,7 +359,7 @@ export default function ReviewPage() {
               </Link>
               <Link
                 href="/pricing"
-                title="View ChatGPT Images 2.0 pricing"
+                title="View ChatGPT Image 2.0 pricing"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base transition-colors"
                 style={{ border: "1px solid var(--border)", color: "var(--muted)" }}
               >
@@ -418,7 +418,7 @@ export default function ReviewPage() {
             <SectionIntro
               eyebrow="Verdict"
               title="TL;DR verdict at a glance"
-              text="ChatGPT Images 2.0 is worth using if your team needs high quality visual drafts and publishable image candidates faster than a traditional design or stock workflow can deliver. It is strongest when you treat each generation like a brief: define the channel, subject, style, lighting, format, and review criteria before spending credits."
+              text="ChatGPT Image 2.0 is worth using if your team needs high quality visual drafts and publishable image candidates faster than a traditional design or stock workflow can deliver. It is strongest when you treat each generation like a brief: define the channel, subject, style, lighting, format, and review criteria before spending credits."
             />
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               {scores.map(([label, value, text]) => (
@@ -459,7 +459,7 @@ export default function ReviewPage() {
           <section id="why-now">
             <SectionIntro
               eyebrow="Context"
-              title="Why we tested ChatGPT Images 2.0 now"
+              title="Why we tested ChatGPT Image 2.0 now"
               text="AI image generators are no longer judged only by whether they can create something impressive. The useful question in 2026 is whether they can support repeatable production work. That means a visual needs to fit a campaign, respect layout constraints, be easy to revise, and cost little enough that a team can explore multiple directions."
             />
             <div className="grid md:grid-cols-3 gap-4">
@@ -487,7 +487,7 @@ export default function ReviewPage() {
           <section id="method">
             <SectionIntro
               eyebrow="Method"
-              title="How we evaluated ChatGPT Images 2.0"
+              title="How we evaluated ChatGPT Image 2.0"
               text="We reviewed the generator against practical production criteria: visual quality, prompt following, style consistency, revision usefulness, output readiness, pricing logic, and likely failure cases. The goal was not to find one perfect image. The goal was to understand whether a working team could rely on the system across several common image jobs."
             />
             <div className="rounded-2xl overflow-hidden" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
@@ -532,7 +532,7 @@ export default function ReviewPage() {
             <SectionIntro
               eyebrow="Deep dive"
               title="Feature deep dive: what worked in practice"
-              text="The best part of ChatGPT Images is not one isolated output. It is the way the generator supports an iterative visual workflow. Strong outputs came from specific prompts, but the system also made it clear how to refine a result when the first image was only eighty percent there."
+              text="The best part of ChatGPT Image is not one isolated output. It is the way the generator supports an iterative visual workflow. Strong outputs came from specific prompts, but the system also made it clear how to refine a result when the first image was only eighty percent there."
             />
             <div className="space-y-4">
               {featureDeepDive.map((feature) => (
@@ -548,12 +548,12 @@ export default function ReviewPage() {
           <section id="comparison">
             <SectionIntro
               eyebrow="Comparison"
-              title="ChatGPT Images 2.0 vs other AI image tools"
+              title="ChatGPT Image 2.0 vs other AI image tools"
               text="The generator is not the only option in the market. The reason to consider it is workflow fit: it is designed around practical prompt control, commercial use cases, image to image iteration, and credit based usage. The tradeoff is that very specialized art direction may still require more manual selection and editing."
             />
             <div className="overflow-hidden rounded-2xl" style={{ background: "var(--surface)", border: "1px solid var(--border)" }}>
               <div className="grid grid-cols-[1fr_1.2fr_1.1fr_1.1fr] min-w-[760px]">
-                {["Dimension", "ChatGPT Images 2.0", "General AI image apps", "Art-first generators"].map((head) => (
+                {["Dimension", "ChatGPT Image 2.0", "General AI image apps", "Art-first generators"].map((head) => (
                   <div key={head} className="p-4 text-sm font-bold" style={{ borderBottom: "1px solid var(--border)", color: "var(--text)" }}>
                     {head}
                   </div>
@@ -614,7 +614,7 @@ export default function ReviewPage() {
             <SectionIntro
               eyebrow="Limits"
               title="Limits and failure cases"
-              text="A useful review should explain where a tool struggles. ChatGPT Images 2.0 can produce strong images, but it still needs human review. The closer an asset gets to a real commercial deadline, the more important detail inspection becomes."
+              text="A useful review should explain where a tool struggles. ChatGPT Image 2.0 can produce strong images, but it still needs human review. The closer an asset gets to a real commercial deadline, the more important detail inspection becomes."
             />
             <div className="grid md:grid-cols-2 gap-4">
               {limits.map((item) => (
@@ -630,7 +630,7 @@ export default function ReviewPage() {
           <section id="audience">
             <SectionIntro
               eyebrow="Use cases"
-              title="Who should standardize on ChatGPT Images 2.0"
+              title="Who should standardize on ChatGPT Image 2.0"
               text="The generator is most valuable for teams that repeatedly need fresh visuals but do not want every image request to become a separate design or photography project. It is less compelling for teams that only need one exact technical image or a fully controlled brand illustration system."
             />
             <div className="grid md:grid-cols-2 gap-4">
@@ -664,7 +664,7 @@ export default function ReviewPage() {
           <section id="trust">
             <SectionIntro
               eyebrow="Trust"
-              title="Why trust this ChatGPT Images review"
+              title="Why trust this ChatGPT Image review"
               text="This review is written from a production perspective. We evaluated the generator as a working website, marketing, and content tool rather than as a novelty image demo. The criteria were based on whether a result could survive common review steps: creative direction, layout fit, detail inspection, price justification, and final export readiness."
             />
             <div className="grid md:grid-cols-3 gap-4">
@@ -716,14 +716,14 @@ export default function ReviewPage() {
               Recommended for production-minded creators
             </h2>
             <p className="text-lg leading-relaxed mb-8 mx-auto max-w-3xl" style={{ color: "var(--muted)" }}>
-              Our final verdict: ChatGPT Images 2.0 is a strong choice for teams that need fast, specific, commercially useful visuals and are willing to review outputs like any other creative asset. It is not magic, and it is not a perfect replacement for art direction. It is a practical generator for turning briefs into usable options, reducing blank-page time, and giving teams more visual directions before they commit budget to final production.
+              Our final verdict: ChatGPT Image 2.0 is a strong choice for teams that need fast, specific, commercially useful visuals and are willing to review outputs like any other creative asset. It is not magic, and it is not a perfect replacement for art direction. It is a practical generator for turning briefs into usable options, reducing blank-page time, and giving teams more visual directions before they commit budget to final production.
             </p>
             <Link
               href="/gpt-image-2"
-              title="Try ChatGPT Images 2.0 after reading the review"
+              title="Try ChatGPT Image 2.0 after reading the review"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold text-white grad-bg"
             >
-              Try ChatGPT Images 2.0
+              Try ChatGPT Image 2.0
               <ArrowRight className="w-4 h-4" />
             </Link>
           </section>

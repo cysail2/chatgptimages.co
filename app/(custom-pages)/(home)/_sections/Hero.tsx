@@ -56,7 +56,7 @@ export function Hero() {
         </Link>
         <Link
           href="/gpt-image-2-review"
-          title="Read the ChatGPT Images 2.0 Review"
+          title="Read the ChatGPT Image 2.0 Review"
           className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base transition-colors"
           style={{ border: "1px solid var(--border)", color: "var(--muted)" }}
         >

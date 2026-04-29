@@ -3,9 +3,9 @@ import Link from "next/link";
 import { site } from "../_shared/site-content";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ChatGPT Images",
+  title: "Privacy Policy | ChatGPT Image",
   description:
-    "Read the ChatGPT Images privacy policy. Learn how we collect, use, and protect your data when you use the AI image generator.",
+    "Read the ChatGPT Image privacy policy. Learn how we collect, use, and protect your data when you use the AI image generator.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };
@@ -183,10 +183,10 @@ export default function PrivacyPage() {
         </div>
 
         <div className="mt-16 pt-8 flex gap-6 text-sm" style={{ borderTop: "1px solid var(--border)", color: "var(--muted2)" }}>
-          <Link href="/terms" title="ChatGPT Images Terms of Service" className="hover:underline" style={{ color: "var(--accent)" }}>
+          <Link href="/terms" title="ChatGPT Image Terms of Service" className="hover:underline" style={{ color: "var(--accent)" }}>
             Terms of Service
           </Link>
-          <Link href="/refund" title="ChatGPT Images Refund Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
+          <Link href="/refund" title="ChatGPT Image Refund Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
             Refund Policy
           </Link>
         </div>

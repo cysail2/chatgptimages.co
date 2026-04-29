@@ -42,7 +42,7 @@ const page: SeoContentPageData = {
   publishedAt: "2026-04-05",
   updatedAt: "2026-04-28",
   author: {
-    name: "ChatGPT Images Editorial",
+    name: "ChatGPT Image Editorial",
     url: "https://chatgptimages.co",
   },
   articleHeader: true,
@@ -192,7 +192,7 @@ const page: SeoContentPageData = {
         {
           title: "Plan flexibility",
           text:
-            "GPT Image 2 is available through OpenAI's API, ChatGPT plans, and partner products like ChatGPT Images. Nano Banana 2 is available through Google's API and Gemini surfaces. Pick the plan that matches where your team already has billing and identity set up.",
+            "GPT Image 2 is available through OpenAI's API, ChatGPT plans, and partner products like ChatGPT Image. Nano Banana 2 is available through Google's API and Gemini surfaces. Pick the plan that matches where your team already has billing and identity set up.",
         },
       ],
     },

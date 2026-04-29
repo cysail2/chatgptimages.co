@@ -7,14 +7,14 @@ export function WhatIs() {
           Overview
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-10">
-          What Is ChatGPT Images 2.0?
+          What Is ChatGPT Image 2.0?
         </h2>
         <div className="space-y-5 text-base md:text-lg leading-relaxed" style={{ color: "var(--muted)" }}>
           <p>
-            <strong className="text-white">ChatGPT Images 2.0</strong> is the latest generation of
+            <strong className="text-white">ChatGPT Image 2.0</strong> is the latest generation of
             AI image generation built for real creative work — powered by the{" "}
             <strong className="text-white">gpt-image-2</strong> model. Unlike earlier text-to-image
-            tools that produce generic stock-looking outputs, ChatGPT Images 2.0 understands
+            tools that produce generic stock-looking outputs, ChatGPT Image 2.0 understands
             nuanced prompts, respects compositional intent, and delivers photorealistic detail at
             production resolutions up to 4K.
           </p>

@@ -20,10 +20,10 @@ export function PricingPreview() {
           Pricing
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-          ChatGPT Images 2.0 Simple, Transparent Pricing
+          ChatGPT Image 2.0 Simple, Transparent Pricing
         </h2>
         <p className="text-center text-lg mb-4 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
-          No subscriptions. No tiered feature gates. Buy credits once with ChatGPT Images 2.0,
+          No subscriptions. No tiered feature gates. Buy credits once with ChatGPT Image 2.0,
           use them whenever you need a new image. Credits never expire.
         </p>
         <p className="text-center text-sm mb-14" style={{ color: "var(--accent)" }}>
@@ -60,7 +60,7 @@ export function PricingPreview() {
                 ))}
               </ul>
               <Link href="/pricing"
-                title={`Get the ${plan.name} credit pack for ChatGPT Images 2.0`}
+                title={`Get the ${plan.name} credit pack for ChatGPT Image 2.0`}
                 className={cn(
                   "text-center py-3 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90",
                   plan.popular ? "text-white grad-bg" : "border"
@@ -73,7 +73,7 @@ export function PricingPreview() {
         </div>
 
         <p className="text-center text-sm" style={{ color: "var(--muted2)" }}>
-          <Link href="/pricing" title="View full ChatGPT Images 2.0 pricing" className="hover:underline" style={{ color: "var(--accent)" }}>
+          <Link href="/pricing" title="View full ChatGPT Image 2.0 pricing" className="hover:underline" style={{ color: "var(--accent)" }}>
             View full pricing details →
           </Link>
         </p>

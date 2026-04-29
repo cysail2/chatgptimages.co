@@ -44,7 +44,7 @@ const page: SeoContentPageData = {
   publishedAt: "2026-03-20",
   updatedAt: "2026-04-28",
   author: {
-    name: "ChatGPT Images Editorial",
+    name: "ChatGPT Image Editorial",
     url: "https://chatgptimages.co",
   },
   breadcrumbs: [
@@ -298,7 +298,7 @@ const page: SeoContentPageData = {
     },
     {
       q: "Can I commercially use these examples?",
-      a: "Outputs you generate yourself with GPT Image 2 through ChatGPT Images are private by default and usable in ads, product pages, social posts, presentations, and editorial layouts without visible watermarks. Always check your current plan for the latest commercial-use terms.",
+      a: "Outputs you generate yourself with GPT Image 2 through ChatGPT Image are private by default and usable in ads, product pages, social posts, presentations, and editorial layouts without visible watermarks. Always check your current plan for the latest commercial-use terms.",
     },
     {
       q: "Where can I learn how to write prompts like these?",

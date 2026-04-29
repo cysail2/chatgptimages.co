@@ -3,9 +3,9 @@ import Link from "next/link";
 import { site } from "../_shared/site-content";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | ChatGPT Images",
+  title: "Refund Policy | ChatGPT Image",
   description:
-    "Read the ChatGPT Images refund policy. Credit packs can be refunded within 7 days of purchase. Contact support to request a refund.",
+    "Read the ChatGPT Image refund policy. Credit packs can be refunded within 7 days of purchase. Contact support to request a refund.",
   alternates: { canonical: "/refund" },
   robots: { index: true, follow: true },
 };
@@ -52,7 +52,7 @@ export default function RefundPage() {
               </li>
               <li>
                 Your account is in good standing and has not violated our{" "}
-                <Link href="/terms" title="ChatGPT Images Terms of Service" className="hover:underline" style={{ color: "var(--accent)" }}>
+                <Link href="/terms" title="ChatGPT Image Terms of Service" className="hover:underline" style={{ color: "var(--accent)" }}>
                   Terms of Service
                 </Link>.
               </li>
@@ -141,10 +141,10 @@ export default function RefundPage() {
         </div>
 
         <div className="mt-16 pt-8 flex gap-6 text-sm" style={{ borderTop: "1px solid var(--border)", color: "var(--muted2)" }}>
-          <Link href="/privacy" title="ChatGPT Images Privacy Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
+          <Link href="/privacy" title="ChatGPT Image Privacy Policy" className="hover:underline" style={{ color: "var(--accent)" }}>
             Privacy Policy
           </Link>
-          <Link href="/terms" title="ChatGPT Images Terms of Service" className="hover:underline" style={{ color: "var(--accent)" }}>
+          <Link href="/terms" title="ChatGPT Image Terms of Service" className="hover:underline" style={{ color: "var(--accent)" }}>
             Terms of Service
           </Link>
         </div>

@@ -112,7 +112,7 @@ export function PricingCTA() {
       expire.{" "}
       <Link
         href="/sign-up"
-        title="Create a free ChatGPT Images 2.0 account"
+        title="Create a free ChatGPT Image 2.0 account"
         className="hover:underline"
         style={{ color: "var(--accent)" }}
       >

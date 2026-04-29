@@ -271,7 +271,7 @@
       "kind": "image",
       "status": "missing",
       "exists": false,
-      "prompt": "Minimal logo for 'ChatGPT Images', an AI image generation web app. Abstract geometric icon suggesting image creation — a stylized frame or pixel grid with a subtle gradient spark or light effect. Clean modern design, blue-purple gradient (#7c5cfc to #38bdf8), transparent background, simple icon, no text, vector-style, square format 512x512.",
+      "prompt": "Minimal logo for 'ChatGPT Image', an AI image generation web app. Abstract geometric icon suggesting image creation — a stylized frame or pixel grid with a subtle gradient spark or light effect. Clean modern design, blue-purple gradient (#7c5cfc to #38bdf8), transparent background, simple icon, no text, vector-style, square format 512x512.",
       "isAIGenerated": false,
       "updatedAt": "2026-04-24"
     },
@@ -283,7 +283,7 @@
       "kind": "image",
       "status": "generated",
       "exists": true,
-      "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Images 2.0 AI Image Generator' page. Dark background with purple gradient. Shows a stylized prompt input interface on the left ('A futuristic city at sunset...') and a generated image preview on the right. Headline 'ChatGPT Images 2.0 Generator'. Clean SaaS UI aesthetic.",
+      "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Image 2.0 AI Image Generator' page. Dark background with purple gradient. Shows a stylized prompt input interface on the left ('A futuristic city at sunset...') and a generated image preview on the right. Headline 'ChatGPT Image 2.0 Generator'. Clean SaaS UI aesthetic.",
       "isAIGenerated": false,
       "updatedAt": "2026-04-24"
     },
@@ -295,7 +295,7 @@
       "kind": "image",
       "status": "generated",
       "exists": true,
-      "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Images 2.0 Generator' homepage. Dark background (#0a0a0f) with blue-purple gradient glow. Bold white headline 'ChatGPT Images 2.0' with subtitle 'AI Image Generator — Realistic Photos & Creative Art'. Grid of 4 small AI-generated image thumbnails on the right side. Modern SaaS aesthetic, professional tech design.",
+      "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Image 2.0 Generator' homepage. Dark background (#0a0a0f) with blue-purple gradient glow. Bold white headline 'ChatGPT Image 2.0' with subtitle 'AI Image Generator — Realistic Photos & Creative Art'. Grid of 4 small AI-generated image thumbnails on the right side. Modern SaaS aesthetic, professional tech design.",
       "isAIGenerated": false,
       "updatedAt": "2026-04-24"
     },
@@ -307,7 +307,7 @@
       "kind": "image",
       "status": "generated",
       "exists": true,
-      "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Images 2.0 Pricing'. Dark background with three pricing card previews: Starter $9.90 (400 credits), Pro $29.90 (1300 credits), Max $99.90 (5000 credits, highlighted in purple). Headline 'Simple Credit Packs — No Subscription'. Professional SaaS pricing aesthetic.",
+      "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Image 2.0 Pricing'. Dark background with three pricing card previews: Starter $9.90 (400 credits), Pro $29.90 (1300 credits), Max $99.90 (5000 credits, highlighted in purple). Headline 'Simple Credit Packs — No Subscription'. Professional SaaS pricing aesthetic.",
       "isAIGenerated": false,
       "updatedAt": "2026-04-24"
     },
@@ -319,7 +319,7 @@
       "kind": "image",
       "status": "generated",
       "exists": true,
-      "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Images 2.0 Review 2026'. Dark background, large gold star rating 4.8/5, bold headline 'ChatGPT Images 2.0 Review 2026' in white, green 'Recommended' verdict badge. Editorial design with subtle AI image grid in background. Professional tech review aesthetic.",
+      "prompt": "Open graph social preview image 1200x630 for 'ChatGPT Image 2.0 Review 2026'. Dark background, large gold star rating 4.8/5, bold headline 'ChatGPT Image 2.0 Review 2026' in white, green 'Recommended' verdict badge. Editorial design with subtle AI image grid in background. Professional tech review aesthetic.",
       "isAIGenerated": false,
       "updatedAt": "2026-04-24"
     }

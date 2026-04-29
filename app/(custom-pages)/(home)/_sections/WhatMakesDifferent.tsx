@@ -4,7 +4,7 @@ const items = [
   {
     icon: Maximize,
     title: "Native 4K Resolution Output",
-    desc: "ChatGPT Images 2.0 generates native 4K images — not upscaled approximations. Print-ready detail, sharp text edges, and accurate textures suitable for large-format campaigns and editorial use.",
+    desc: "ChatGPT Image 2.0 generates native 4K images — not upscaled approximations. Print-ready detail, sharp text edges, and accurate textures suitable for large-format campaigns and editorial use.",
   },
   {
     icon: Layers,
@@ -42,7 +42,7 @@ export function WhatMakesDifferent() {
           What&apos;s New
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-          What Makes ChatGPT Images 2.0 Different
+          What Makes ChatGPT Image 2.0 Different
         </h2>
         <p className="text-center text-lg mb-14 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
           Six engineering decisions that separate this AI image generator from the rest of the market.

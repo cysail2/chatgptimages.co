@@ -5,14 +5,14 @@ const siteConfig = siteConfigData as typeof siteConfigData;
 const pricingConfig = pricingData as typeof pricingData;
 
 const planDescriptions: Record<string, string> = {
-  starter: "Perfect for trying out ChatGPT Images 2.0",
+  starter: "Perfect for trying out ChatGPT Image 2.0",
   pro: "Great for regular creators",
   max: "Best value for power users and teams",
 };
 
 export const site = {
   name: siteConfig.site.name,
-  productName: "ChatGPT Images 2.0",
+  productName: "ChatGPT Image 2.0",
   url: siteConfig.site.url,
   description: siteConfig.site.description,
   email: siteConfig.contact.email,

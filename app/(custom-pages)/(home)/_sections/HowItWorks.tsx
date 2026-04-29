@@ -16,7 +16,7 @@ const steps = [
   {
     step: "03",
     icon: Sparkles,
-    title: "Generate with ChatGPT Images 2.0",
+    title: "Generate with ChatGPT Image 2.0",
     desc: "The model produces your image in under 10 seconds at 1K resolution. Higher resolutions take a few seconds longer. If the first result isn&apos;t perfect, tweak your prompt and regenerate.",
   },
   {
@@ -36,7 +36,7 @@ export function HowItWorks() {
           Workflow
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center mb-4">
-          How ChatGPT Images 2.0 Turns Text Into Images
+          How ChatGPT Image 2.0 Turns Text Into Images
         </h2>
         <p className="text-center text-lg mb-16 max-w-2xl mx-auto" style={{ color: "var(--muted)" }}>
           The entire workflow is four steps — no training, no fine-tuning, no

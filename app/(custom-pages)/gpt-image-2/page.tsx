@@ -32,12 +32,12 @@ const capabilityGroups = [
   {
     icon: ImageIcon,
     title: "Text to image generation",
-    text: "Turn a written creative brief into a finished visual. The ChatGPT Images generator understands subject, style, camera angle, lighting, background, aspect ratio, and output format in one prompt.",
+    text: "Turn a written creative brief into a finished visual. The ChatGPT Image generator understands subject, style, camera angle, lighting, background, aspect ratio, and output format in one prompt.",
   },
   {
     icon: Layers,
     title: "Image to image refinement",
-    text: "Start with a rough reference image, product mockup, sketch, or prior generation. Describe the transformation and keep the workflow inside one ChatGPT Images session instead of switching tools.",
+    text: "Start with a rough reference image, product mockup, sketch, or prior generation. Describe the transformation and keep the workflow inside one ChatGPT Image session instead of switching tools.",
   },
   {
     icon: Maximize2,
@@ -77,7 +77,7 @@ const examples = [
 const steps = [
   {
     title: "Write a focused prompt",
-    text: "Start with the subject and purpose, then add camera framing, lighting, style, mood, and output size. The best ChatGPT Images prompts read like a short art direction note.",
+    text: "Start with the subject and purpose, then add camera framing, lighting, style, mood, and output size. The best ChatGPT Image prompts read like a short art direction note.",
   },
   {
     title: "Choose output settings",
@@ -150,12 +150,12 @@ const productionChecks = [
 
 const faqs = [
   {
-    q: "Is ChatGPT Images 2.0 a text to image generator?",
+    q: "Is ChatGPT Image 2.0 a text to image generator?",
     a: "Yes. The generator turns text prompts into AI images, including realistic photography, product images, concept art, anime style work, abstract graphics, and social media visuals.",
   },
   {
     q: "Can I upload a reference image?",
-    a: "Yes. Image to image mode lets you upload a rough reference, sketch, product photo, or existing design and describe how ChatGPT Images should transform it.",
+    a: "Yes. Image to image mode lets you upload a rough reference, sketch, product photo, or existing design and describe how ChatGPT Image should transform it.",
   },
   {
     q: "What should I write in a good prompt?",
@@ -163,7 +163,7 @@ const faqs = [
   },
   {
     q: "Can I use generated images commercially?",
-    a: "Yes. Images made with ChatGPT Images can be used for marketing, client work, product pages, thumbnails, ads, presentations, and other commercial projects.",
+    a: "Yes. Images made with ChatGPT Image can be used for marketing, client work, product pages, thumbnails, ads, presentations, and other commercial projects.",
   },
   {
     q: "How many free generations do I get?",
@@ -186,7 +186,7 @@ function JsonLd() {
       name: `${plan.name} credit pack`,
       price: plan.price,
       priceCurrency: "USD",
-      description: `${plan.credits} credits for ChatGPT Images generation.`,
+      description: `${plan.credits} credits for ChatGPT Image generation.`,
     })),
     aggregateRating: {
       "@type": "AggregateRating",
@@ -314,7 +314,7 @@ export default function GeneratorPage() {
           <SectionHeader
             eyebrow="Examples"
             title="See generator outputs across real creative briefs"
-            text="The same ChatGPT Images workflow can produce polished visuals for ads, product launches, editorial layouts, concept boards, social channels, and presentation decks."
+            text="The same ChatGPT Image workflow can produce polished visuals for ads, product launches, editorial layouts, concept boards, social channels, and presentation decks."
           />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {examples.map(({ id, label, prompt }) => (
@@ -364,7 +364,7 @@ export default function GeneratorPage() {
               GPT Image 2 is designed for quick drafting and high quality final exports. Use lower cost
               generations to explore direction, then move to higher detail settings once the creative concept is locked.
             </p>
-            <Link href="/pricing" title="Compare ChatGPT Images 2.0 credit pricing" className="inline-flex items-center gap-2 font-semibold" style={{ color: "var(--accent)" }}>
+            <Link href="/pricing" title="Compare ChatGPT Image 2.0 credit pricing" className="inline-flex items-center gap-2 font-semibold" style={{ color: "var(--accent)" }}>
               Compare credit costs
               <ArrowRight className="w-4 h-4" />
             </Link>
@@ -384,7 +384,7 @@ export default function GeneratorPage() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader
             eyebrow="Prompting"
-            title="Prompting guide for better ChatGPT Images results"
+            title="Prompting guide for better ChatGPT Image results"
             text="Better prompts are not longer by default. They are more specific about the visual job, the intended output channel, and the constraints that matter for the final asset."
           />
           <div className="grid md:grid-cols-2 gap-4">
@@ -427,7 +427,7 @@ export default function GeneratorPage() {
               Start with free credits, then buy only what you need
             </h2>
             <p className="text-lg leading-relaxed" style={{ color: "var(--muted)" }}>
-              New users get {registerBonus} credits for testing ChatGPT Images. After that, credit packs work better
+              New users get {registerBonus} credits for testing ChatGPT Image. After that, credit packs work better
               than a forced subscription for occasional design tasks, campaign sprints, and client projects with uneven demand.
             </p>
           </div>
@@ -449,7 +449,7 @@ export default function GeneratorPage() {
           <SectionHeader
             eyebrow="FAQ"
             title="Frequently asked questions about the generator"
-            text="These answers cover the common decisions teams make before adding ChatGPT Images to a visual production workflow."
+            text="These answers cover the common decisions teams make before adding ChatGPT Image to a visual production workflow."
           />
           <div className="space-y-3">
             {faqs.map((item) => (
@@ -473,7 +473,7 @@ export default function GeneratorPage() {
           </p>
           <Link
             href="/sign-up"
-            title="Create a free ChatGPT Images account"
+            title="Create a free ChatGPT Image account"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-bold text-white grad-bg"
           >
             Create images free
