@@ -1,0 +1,1280 @@
+{
+  "version": 1,
+  "title": "chatgptimages.co",
+  "subtitle": "按 Phase 0-6 推进：配置 -> 样式 -> 页面清单 -> 逐页设计 -> 素材 -> 写代码与验收 -> 部署上线。",
+  "entryLevel": "root",
+  "levels": [
+    {
+      "id": "root",
+      "title": "chatgptimages.co",
+      "subtitle": "按 Phase 0-6 推进，每个 Phase 的 Gate 产物确认后进入下一步。",
+      "nodes": [
+        {
+          "id": "phase-0-config",
+          "title": "Phase 0 · 站点配置",
+          "subtitle": "data/site.json、data/pricing.json 已落地，缺 .nextsite/site.json 投影",
+          "status": "partial",
+          "owner": "human",
+          "phase": 0,
+          "done": false,
+          "childLevel": "phase-0",
+          "panel": "project-site-settings",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "data/site.json",
+              "description": "Phase 0 Gate：站点配置已在 data/site.json 落地"
+            }
+          ],
+          "skillRef": "site-building/00-建站总流程.md#phase-0--站点基础配置"
+        },
+        {
+          "id": "phase-1-style",
+          "title": "Phase 1 · 整体样式",
+          "subtitle": "app/globals.css 已有主题色和定价等自定义样式",
+          "status": "ready",
+          "owner": "human",
+          "phase": 1,
+          "done": true,
+          "childLevel": "phase-1",
+          "dependsOn": [
+            "phase-0-config"
+          ],
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "style-selection",
+              "description": "Phase 1 Gate：主题变量和页面样式已落地"
+            }
+          ],
+          "skillRef": "site-building/00-建站总流程.md#phase-1--整体样式"
+        },
+        {
+          "id": "phase-2-pages",
+          "title": "Phase 2 · 页面清单",
+          "subtitle": "app 下已有 20+ page.tsx，data/pages.json 已存在",
+          "status": "ready",
+          "owner": "human",
+          "phase": 2,
+          "done": true,
+          "childLevel": "phase-2",
+          "dependsOn": [
+            "phase-1-style"
+          ],
+          "panel": "project-pages",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "data/pages.json",
+              "description": "Phase 2 Gate：页面清单已存在"
+            }
+          ],
+          "skillRef": "site-building/00-建站总流程.md#phase-2--页面清单"
+        },
+        {
+          "id": "phase-3-design",
+          "title": "Phase 3 · 逐页设计",
+          "subtitle": "核心页面已实现，部分页面大纲产物未独立沉淀",
+          "status": "partial",
+          "owner": "ai",
+          "phase": 3,
+          "done": false,
+          "childLevel": "phase-3",
+          "dependsOn": [
+            "phase-2-pages"
+          ],
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)",
+              "description": "Phase 3 Gate：页面实现与区块组合已在 app/(custom-pages) 落地"
+            }
+          ],
+          "skillRef": "site-building/00-建站总流程.md#phase-3--逐页设计每页一轮"
+        },
+        {
+          "id": "phase-4-assets",
+          "title": "Phase 4 · 素材清单",
+          "subtitle": "public/images 与 public/og 有多张真实图片素材",
+          "status": "partial",
+          "owner": "human",
+          "phase": 4,
+          "done": false,
+          "childLevel": "phase-4",
+          "dependsOn": [
+            "phase-3-design"
+          ],
+          "panel": "project-resources",
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "public/images",
+              "description": "Phase 4 Gate：真实素材已存在，素材清单仍需确认"
+            }
+          ],
+          "skillRef": "site-building/00-建站总流程.md#phase-4--素材清单"
+        },
+        {
+          "id": "phase-5-build",
+          "title": "Phase 5 · 写代码与验收",
+          "subtitle": "页面代码已落地，typecheck 通过，未发现 seo-check 脚本",
+          "status": "partial",
+          "owner": "ai",
+          "phase": 5,
+          "done": false,
+          "childLevel": "phase-5",
+          "dependsOn": [
+            "phase-4-assets"
+          ],
+          "gate": [
+            {
+              "kind": "command",
+              "target": "typecheck",
+              "description": "Phase 5 Gate：npm run typecheck 已通过，SEO/build 仍待验收"
+            }
+          ],
+          "skillRef": "site-building/00-建站总流程.md#phase-5--写代码--本地验证"
+        },
+        {
+          "id": "phase-6-launch",
+          "title": "Phase 6 · 部署上线",
+          "subtitle": "Git remote 已配置，Clerk 部分接入，Vercel/上线验证未见证据",
+          "status": "partial",
+          "owner": "workspace",
+          "phase": 6,
+          "done": false,
+          "childLevel": "phase-6",
+          "dependsOn": [
+            "phase-5-build"
+          ],
+          "panel": "project-deployment",
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "production-url",
+              "description": "Phase 6 Gate：生产域名可访问 + 关键页面 200"
+            }
+          ],
+          "skillRef": "site-building/00-建站总流程.md#phase-6--部署上线"
+        }
+      ]
+    },
+    {
+      "id": "phase-0",
+      "title": "Phase 0 · 站点配置",
+      "subtitle": "站点配置、模块开关和价格档位。",
+      "nodes": [
+        {
+          "id": "site-json",
+          "title": "站点基础配置",
+          "subtitle": "data/site.json 含 site/contact/seo/features/api/theme",
+          "status": "partial",
+          "owner": "human",
+          "phase": 0,
+          "done": false,
+          "panel": "project-site-settings",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "data/site.json",
+              "description": "完整站点配置已存在；.nextsite/site.json 投影未生成"
+            }
+          ]
+        },
+        {
+          "id": "module-switches",
+          "title": "模块开关",
+          "subtitle": "enableUserModule 与 enableOnlinePayment 均已启用",
+          "status": "ready",
+          "owner": "human",
+          "phase": 0,
+          "done": true,
+          "panel": "project-modules",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "data/site.json",
+              "description": "features 段已包含用户、支付、按钮等开关"
+            }
+          ]
+        },
+        {
+          "id": "pricing-config",
+          "title": "价格档位",
+          "subtitle": "data/pricing.json 已有三档 Stripe priceId",
+          "status": "ready",
+          "owner": "human",
+          "phase": 0,
+          "done": true,
+          "conditional": {
+            "feature": "enableOnlinePayment",
+            "equals": true
+          },
+          "panel": "project-pricing",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "data/pricing.json",
+              "description": "三档价格计划均已配置 priceId"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-1",
+      "title": "Phase 1 · 整体样式",
+      "subtitle": "主题变量和页面样式已实现。",
+      "nodes": [
+        {
+          "id": "style-selection",
+          "title": "建站选型单",
+          "subtitle": "app/globals.css 已有自定义主题和页面样式",
+          "status": "ready",
+          "owner": "human",
+          "phase": 1,
+          "done": true,
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "style-selection",
+              "description": "视觉风格已体现在 globals.css 与页面实现"
+            }
+          ]
+        },
+        {
+          "id": "theme-writeback",
+          "title": "主题写回",
+          "subtitle": "data/site.json theme 字段已存在",
+          "status": "ready",
+          "owner": "workspace",
+          "phase": 1,
+          "done": true,
+          "dependsOn": [
+            "style-selection"
+          ],
+          "panel": "project-site-settings",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "data/site.json",
+              "description": "theme preset/mode/light/dark 已配置"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "title": "Phase 2 · 页面清单",
+      "subtitle": "页面清单和首期范围已落地。",
+      "nodes": [
+        {
+          "id": "pages-json",
+          "title": "页面清单草案",
+          "subtitle": "data/pages.json 已存在，app 下页面超过 5 个",
+          "status": "ready",
+          "owner": "human",
+          "phase": 2,
+          "done": true,
+          "panel": "project-pages",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "data/pages.json",
+              "description": "页面清单已落地"
+            }
+          ]
+        },
+        {
+          "id": "route-scope",
+          "title": "首期上线范围",
+          "subtitle": "Home/Product/Review/Pricing/Policy 页面均已存在",
+          "status": "ready",
+          "owner": "human",
+          "phase": 2,
+          "done": true,
+          "dependsOn": [
+            "pages-json"
+          ],
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "phase-2-approval",
+              "description": "首期页面范围已由代码落地体现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "title": "Phase 3 · 逐页设计",
+      "subtitle": "每个页面进入自己的子流程。",
+      "nodes": [
+        {
+          "id": "home",
+          "title": "Home",
+          "subtitle": "首页 page.tsx 较短，但 _sections 已拆出大量区块",
+          "status": "partial",
+          "owner": "ai",
+          "phase": 3,
+          "done": false,
+          "childLevel": "page:home",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/(home)/page.tsx",
+              "description": "Home 页面入口已存在"
+            }
+          ]
+        },
+        {
+          "id": "gpt-image-2",
+          "title": "GPT Image 2",
+          "subtitle": "Product 页面超过 100 行",
+          "status": "partial",
+          "owner": "ai",
+          "phase": 3,
+          "done": false,
+          "childLevel": "page:gpt-image-2",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/gpt-image-2/page.tsx",
+              "description": "Product 页面已实现"
+            }
+          ]
+        },
+        {
+          "id": "gpt-image-2-review",
+          "title": "GPT Image 2 Review",
+          "subtitle": "Review 页面超过 100 行",
+          "status": "partial",
+          "owner": "ai",
+          "phase": 3,
+          "done": false,
+          "childLevel": "page:gpt-image-2-review",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/gpt-image-2-review/page.tsx",
+              "description": "Review 页面已实现"
+            }
+          ]
+        },
+        {
+          "id": "pricing",
+          "title": "Pricing",
+          "subtitle": "Pricing 页面超过 100 行",
+          "status": "partial",
+          "owner": "ai",
+          "phase": 3,
+          "done": false,
+          "childLevel": "page:pricing",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/pricing/page.tsx",
+              "description": "Pricing 页面已实现"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Privacy",
+          "subtitle": "Privacy 页面超过 100 行",
+          "status": "partial",
+          "owner": "human",
+          "phase": 3,
+          "done": false,
+          "childLevel": "page:privacy",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/privacy/page.tsx",
+              "description": "Privacy 页面已实现"
+            }
+          ]
+        },
+        {
+          "id": "terms",
+          "title": "Terms",
+          "subtitle": "Terms 页面超过 100 行",
+          "status": "partial",
+          "owner": "human",
+          "phase": 3,
+          "done": false,
+          "childLevel": "page:terms",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/terms/page.tsx",
+              "description": "Terms 页面已实现"
+            }
+          ]
+        },
+        {
+          "id": "refund",
+          "title": "Refund",
+          "subtitle": "Refund 页面超过 100 行",
+          "status": "partial",
+          "owner": "human",
+          "phase": 3,
+          "done": false,
+          "childLevel": "page:refund",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/refund/page.tsx",
+              "description": "Refund 页面已实现"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "title": "Phase 4 · 素材清单",
+      "subtitle": "素材已存在，清单仍需整理。",
+      "nodes": [
+        {
+          "id": "asset-inventory",
+          "title": "素材清单表",
+          "subtitle": "public/images 下有头像、gallery、real-results、styles 等图片",
+          "status": "partial",
+          "owner": "human",
+          "phase": 4,
+          "done": false,
+          "panel": "project-resources",
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "public/images",
+              "description": "真实素材已超过 3 个，素材清单表仍待确认"
+            }
+          ]
+        },
+        {
+          "id": "resource-collection",
+          "title": "资源归档",
+          "subtitle": "public/resources.json 与 public/og 已存在",
+          "status": "partial",
+          "owner": "workspace",
+          "phase": 4,
+          "done": false,
+          "dependsOn": [
+            "asset-inventory"
+          ],
+          "panel": "project-resources",
+          "gate": [
+            {
+              "kind": "file",
+              "target": "public/resources.json",
+              "description": "资源 manifest 已存在"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-5",
+      "title": "Phase 5 · 写代码与验收",
+      "subtitle": "代码已实现，typecheck 已通过，build/SEO 仍待验收。",
+      "nodes": [
+        {
+          "id": "implementation",
+          "title": "页面实现",
+          "subtitle": "app/(custom-pages) 与用户/支付路由已实现",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 5,
+          "done": true,
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "app",
+              "description": "页面代码和业务路由已存在"
+            }
+          ]
+        },
+        {
+          "id": "template-blocks",
+          "title": "模板区块工具箱",
+          "subtitle": "辅助节点，不是主路径必经",
+          "status": "partial",
+          "owner": "template",
+          "phase": 5,
+          "done": false,
+          "childLevel": "phase-5-template-blocks"
+        },
+        {
+          "id": "typecheck",
+          "title": "Typecheck",
+          "subtitle": "npm run typecheck 已通过",
+          "status": "ready",
+          "owner": "workspace",
+          "phase": 5,
+          "done": true,
+          "dependsOn": [
+            "implementation"
+          ],
+          "gate": [
+            {
+              "kind": "command",
+              "target": "npm run typecheck",
+              "description": "tsc --noEmit 通过"
+            }
+          ]
+        },
+        {
+          "id": "build",
+          "title": "Build",
+          "subtitle": "package.json 有 build script，本轮未跑耗时 build",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false,
+          "dependsOn": [
+            "implementation"
+          ],
+          "gate": [
+            {
+              "kind": "command",
+              "target": "npm run build",
+              "description": "next build 通过"
+            }
+          ]
+        },
+        {
+          "id": "seo",
+          "title": "SEO 检查",
+          "subtitle": "未发现 scripts/seo-check.mjs",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false,
+          "dependsOn": [
+            "implementation"
+          ],
+          "gate": [
+            {
+              "kind": "command",
+              "target": "seo-check",
+              "description": "scripts/seo-check.mjs 全绿"
+            }
+          ]
+        },
+        {
+          "id": "style",
+          "title": "Style Check",
+          "subtitle": "globals.css 和自定义页面样式已存在，仍需视觉验收",
+          "status": "partial",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false,
+          "dependsOn": [
+            "implementation"
+          ],
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "visual-review",
+              "description": "移动端和桌面端视觉验收"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phase-5-template-blocks",
+      "title": "模板区块工具箱",
+      "subtitle": "供 Phase 5 选用的 page-builder blocks。",
+      "nodes": [
+        {
+          "id": "hero-mosaic",
+          "title": "Hero Mosaic",
+          "subtitle": "左文右图瀑布",
+          "status": "planned",
+          "owner": "template",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "hero-video",
+          "title": "Full Video Hero",
+          "subtitle": "全屏视频背景",
+          "status": "planned",
+          "owner": "template",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "carousel-wall",
+          "title": "Carousel Wall",
+          "subtitle": "双向媒体墙",
+          "status": "planned",
+          "owner": "template",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "gallery-grid",
+          "title": "Gallery Tabs",
+          "subtitle": "分类筛选图库",
+          "status": "planned",
+          "owner": "template",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "sticky-article",
+          "title": "Sticky TOC",
+          "subtitle": "Review / Guide",
+          "status": "planned",
+          "owner": "template",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "policy",
+          "title": "Policy Article",
+          "subtitle": "政策页壳",
+          "status": "planned",
+          "owner": "template",
+          "phase": 5,
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "phase-6",
+      "title": "Phase 6 · 部署上线",
+      "subtitle": "Git → Clerk → Google OAuth → 关联 → Vercel → 上线验证。",
+      "nodes": [
+        {
+          "id": "01-git",
+          "title": "初始化 Git 仓库并推送",
+          "subtitle": "origin 已配置为 git@github-cysail2:cysail2/chatgptimages.co",
+          "status": "ready",
+          "owner": "workspace",
+          "phase": 6,
+          "done": true,
+          "panel": "project-deployment",
+          "gate": [
+            {
+              "kind": "command",
+              "target": "git remote get-url origin",
+              "description": "Git remote origin 可读"
+            }
+          ],
+          "skillRef": "site-building/03-部署上线流程.md#节点-01--初始化-git-仓库并推送"
+        },
+        {
+          "id": "02-clerk",
+          "title": "创建 Clerk 应用",
+          "subtitle": "代码和 publishable key 已接入，未见 CLERK_SECRET_KEY",
+          "status": "partial",
+          "owner": "human",
+          "phase": 6,
+          "done": false,
+          "conditional": {
+            "feature": "enableUserModule",
+            "equals": true
+          },
+          "panel": "project-env",
+          "gate": [
+            {
+              "kind": "manual",
+              "target": ".env.local",
+              "description": "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY 已存在，Secret Key 待补"
+            }
+          ],
+          "skillRef": "site-building/03-部署上线流程.md#节点-02--创建-clerk-应用"
+        },
+        {
+          "id": "03-google-oauth",
+          "title": "配置 Google OAuth",
+          "subtitle": "未见 Google OAuth client 配置证据",
+          "status": "planned",
+          "owner": "human",
+          "phase": 6,
+          "done": false,
+          "dependsOn": [
+            "02-clerk"
+          ],
+          "conditional": {
+            "feature": "enableUserModule",
+            "equals": true
+          },
+          "panel": "project-env",
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "google-oauth-client",
+              "description": "Google OAuth client id/secret 已创建并记录"
+            }
+          ],
+          "skillRef": "site-building/03-部署上线流程.md#节点-03--配置-google-oauth"
+        },
+        {
+          "id": "04-link-clerk",
+          "title": "关联 Clerk 与 Google OAuth",
+          "subtitle": "依赖 Clerk 与 Google OAuth",
+          "status": "planned",
+          "owner": "human",
+          "phase": 6,
+          "done": false,
+          "dependsOn": [
+            "02-clerk",
+            "03-google-oauth"
+          ],
+          "conditional": {
+            "feature": "enableUserModule",
+            "equals": true
+          },
+          "panel": "project-env",
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "clerk-google-enabled",
+              "description": "Clerk Social Connections 里 Google 状态为 Enabled"
+            }
+          ],
+          "skillRef": "site-building/03-部署上线流程.md#节点-04--关联-clerk-与-google-oauth"
+        },
+        {
+          "id": "05-vercel",
+          "title": "创建 Vercel 项目 + 绑定域名",
+          "subtitle": "未见 vercel.json 或 .vercel 部署痕迹",
+          "status": "planned",
+          "owner": "human",
+          "phase": 6,
+          "done": false,
+          "dependsOn": [
+            "01-git"
+          ],
+          "panel": "project-deployment",
+          "gate": [
+            {
+              "kind": "manual",
+              "target": "vercel-production-ready",
+              "description": "Vercel Production deployment Ready，域名已绑定"
+            }
+          ],
+          "skillRef": "site-building/03-部署上线流程.md#节点-05--创建-vercel-项目--绑定域名"
+        },
+        {
+          "id": "06-online-check",
+          "title": "上线验证",
+          "subtitle": "等待 Vercel 部署后验证",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 6,
+          "done": false,
+          "dependsOn": [
+            "05-vercel"
+          ],
+          "gate": [
+            {
+              "kind": "command",
+              "target": "online-check",
+              "description": "生产域名可访问，关键页面返回 200"
+            }
+          ],
+          "skillRef": "site-building/03-部署上线流程.md#节点-06--上线验证"
+        }
+      ]
+    },
+    {
+      "id": "page:home",
+      "title": "Home 页面流程",
+      "subtitle": "首页页面开发步骤。",
+      "nodes": [
+        {
+          "id": "plan",
+          "title": "页面计划",
+          "subtitle": "首页入口与 section 清单已存在",
+          "status": "ready",
+          "owner": "human",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/(home)/page.tsx",
+              "description": "Home page.tsx 已存在"
+            }
+          ]
+        },
+        {
+          "id": "outline",
+          "title": "内容大纲",
+          "subtitle": "_sections 下有 Hero/FAQ/Pricing/UseCases 等区块",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/(home)/_sections",
+              "description": "首页区块大纲已由 sections 体现"
+            }
+          ]
+        },
+        {
+          "id": "schema",
+          "title": "页面数据",
+          "subtitle": "页面内容和 shared site-content 已接入",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/_shared/site-content.ts",
+              "description": "共享页面数据已存在"
+            }
+          ]
+        },
+        {
+          "id": "media",
+          "title": "素材",
+          "subtitle": "public/images 和 public/og 已有素材",
+          "status": "partial",
+          "owner": "workspace",
+          "phase": 4,
+          "done": false
+        },
+        {
+          "id": "preview",
+          "title": "预览",
+          "subtitle": "待本地视觉确认",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "check",
+          "title": "验收",
+          "subtitle": "待 SEO 与移动端验收",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "page:gpt-image-2",
+      "title": "GPT Image 2 页面流程",
+      "subtitle": "Product 页面开发步骤。",
+      "nodes": [
+        {
+          "id": "plan",
+          "title": "页面计划",
+          "subtitle": "Product 页面超过 100 行",
+          "status": "ready",
+          "owner": "human",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/gpt-image-2/page.tsx",
+              "description": "Product page.tsx 已存在"
+            }
+          ]
+        },
+        {
+          "id": "outline",
+          "title": "内容大纲",
+          "subtitle": "页面 H2/H3 和区块内容已写入 page.tsx",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "schema",
+          "title": "页面数据",
+          "subtitle": "页面 schema/metadata 已在代码中",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "media",
+          "title": "素材",
+          "subtitle": "素材待逐项确认",
+          "status": "partial",
+          "owner": "workspace",
+          "phase": 4,
+          "done": false
+        },
+        {
+          "id": "preview",
+          "title": "预览",
+          "subtitle": "待本地视觉确认",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "check",
+          "title": "验收",
+          "subtitle": "待 SEO 与移动端验收",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "page:gpt-image-2-review",
+      "title": "GPT Image 2 Review 页面流程",
+      "subtitle": "Review 页面开发步骤。",
+      "nodes": [
+        {
+          "id": "plan",
+          "title": "页面计划",
+          "subtitle": "Review 页面超过 100 行",
+          "status": "ready",
+          "owner": "human",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/gpt-image-2-review/page.tsx",
+              "description": "Review page.tsx 已存在"
+            }
+          ]
+        },
+        {
+          "id": "outline",
+          "title": "内容大纲",
+          "subtitle": "Review 长文结构已写入 page.tsx",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "schema",
+          "title": "页面数据",
+          "subtitle": "Review metadata/schema 已在代码中",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "media",
+          "title": "素材",
+          "subtitle": "素材待逐项确认",
+          "status": "partial",
+          "owner": "workspace",
+          "phase": 4,
+          "done": false
+        },
+        {
+          "id": "preview",
+          "title": "预览",
+          "subtitle": "待本地视觉确认",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "check",
+          "title": "验收",
+          "subtitle": "待 SEO 与移动端验收",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "page:pricing",
+      "title": "Pricing 页面流程",
+      "subtitle": "Pricing 页面开发步骤。",
+      "nodes": [
+        {
+          "id": "plan",
+          "title": "页面计划",
+          "subtitle": "Pricing 页面超过 100 行",
+          "status": "ready",
+          "owner": "human",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/pricing/page.tsx",
+              "description": "Pricing page.tsx 已存在"
+            }
+          ]
+        },
+        {
+          "id": "outline",
+          "title": "内容大纲",
+          "subtitle": "Pricing 内容结构已写入 page.tsx",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "schema",
+          "title": "页面数据",
+          "subtitle": "Pricing 使用 data/pricing.json",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "media",
+          "title": "素材",
+          "subtitle": "价格页 OG 图已存在",
+          "status": "partial",
+          "owner": "workspace",
+          "phase": 4,
+          "done": false
+        },
+        {
+          "id": "preview",
+          "title": "预览",
+          "subtitle": "待本地视觉确认",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "check",
+          "title": "验收",
+          "subtitle": "待 SEO 与移动端验收",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "page:privacy",
+      "title": "Privacy 页面流程",
+      "subtitle": "Privacy 页面开发步骤。",
+      "nodes": [
+        {
+          "id": "plan",
+          "title": "页面计划",
+          "subtitle": "Privacy 页面超过 100 行",
+          "status": "ready",
+          "owner": "human",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/privacy/page.tsx",
+              "description": "Privacy page.tsx 已存在"
+            }
+          ]
+        },
+        {
+          "id": "outline",
+          "title": "内容大纲",
+          "subtitle": "政策内容已写入页面",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "schema",
+          "title": "页面数据",
+          "subtitle": "metadata 已在 page.tsx",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "media",
+          "title": "素材",
+          "subtitle": "政策页通常无需额外素材",
+          "status": "ready",
+          "owner": "workspace",
+          "phase": 4,
+          "done": true
+        },
+        {
+          "id": "preview",
+          "title": "预览",
+          "subtitle": "待本地视觉确认",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "check",
+          "title": "验收",
+          "subtitle": "待 SEO 与移动端验收",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "page:terms",
+      "title": "Terms 页面流程",
+      "subtitle": "Terms 页面开发步骤。",
+      "nodes": [
+        {
+          "id": "plan",
+          "title": "页面计划",
+          "subtitle": "Terms 页面超过 100 行",
+          "status": "ready",
+          "owner": "human",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/terms/page.tsx",
+              "description": "Terms page.tsx 已存在"
+            }
+          ]
+        },
+        {
+          "id": "outline",
+          "title": "内容大纲",
+          "subtitle": "政策内容已写入页面",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "schema",
+          "title": "页面数据",
+          "subtitle": "metadata 已在 page.tsx",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "media",
+          "title": "素材",
+          "subtitle": "政策页通常无需额外素材",
+          "status": "ready",
+          "owner": "workspace",
+          "phase": 4,
+          "done": true
+        },
+        {
+          "id": "preview",
+          "title": "预览",
+          "subtitle": "待本地视觉确认",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "check",
+          "title": "验收",
+          "subtitle": "待 SEO 与移动端验收",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "page:refund",
+      "title": "Refund 页面流程",
+      "subtitle": "Refund 页面开发步骤。",
+      "nodes": [
+        {
+          "id": "plan",
+          "title": "页面计划",
+          "subtitle": "Refund 页面超过 100 行",
+          "status": "ready",
+          "owner": "human",
+          "phase": 3,
+          "done": true,
+          "gate": [
+            {
+              "kind": "file",
+              "target": "app/(custom-pages)/refund/page.tsx",
+              "description": "Refund page.tsx 已存在"
+            }
+          ]
+        },
+        {
+          "id": "outline",
+          "title": "内容大纲",
+          "subtitle": "政策内容已写入页面",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "schema",
+          "title": "页面数据",
+          "subtitle": "metadata 已在 page.tsx",
+          "status": "ready",
+          "owner": "ai",
+          "phase": 3,
+          "done": true
+        },
+        {
+          "id": "media",
+          "title": "素材",
+          "subtitle": "政策页通常无需额外素材",
+          "status": "ready",
+          "owner": "workspace",
+          "phase": 4,
+          "done": true
+        },
+        {
+          "id": "preview",
+          "title": "预览",
+          "subtitle": "待本地视觉确认",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        },
+        {
+          "id": "check",
+          "title": "验收",
+          "subtitle": "待 SEO 与移动端验收",
+          "status": "planned",
+          "owner": "workspace",
+          "phase": 5,
+          "done": false
+        }
+      ]
+    }
+  ]
+}
