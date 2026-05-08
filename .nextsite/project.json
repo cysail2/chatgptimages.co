@@ -1,15 +1,15 @@
 {
   "architectureVersion": 2,
   "templateId": "default",
-  "templateVersion": "0eab369-dirty",
+  "templateVersion": "c807447",
   "templateSource": "local-path",
   "templateSourceOptions": {
     "kind": "local-path",
     "path": "/Users/yufei/Code/chiyuan/web-template"
   },
   "createdAt": "2026-04-24T06:00:00.000Z",
-  "updatedAt": "2026-04-24T06:48:43.655Z",
-  "siteName": "ChatGPT Images",
+  "updatedAt": "2026-05-08T08:28:26.068Z",
+  "siteName": "ChatGPT Image",
   "targetDir": "/Users/yufei/Code/chiyuan/chuhai2/chatgptimages.co",
   "siteType": "single",
   "preservePaths": [

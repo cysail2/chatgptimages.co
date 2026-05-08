@@ -1,5 +1,19 @@
 import { API_CONFIG, getHeaders, handleApiError } from "@/library/services/api-core";
 
+const AUTH_REQUEST_TIMEOUT_MS = 15000;
+const USER_INFO_TIMEOUT_MS = 10000;
+
+const createTimeoutSignal = (ms: number): AbortSignal | undefined => {
+  if (typeof AbortSignal !== "undefined" && typeof AbortSignal.timeout === "function") {
+    return AbortSignal.timeout(ms);
+  }
+  if (typeof AbortController !== "undefined") {
+    const controller = new AbortController();
+    setTimeout(() => controller.abort(), ms);
+    return controller.signal;
+  }
+  return undefined;
+};
 
 // 用户认证相关接口
 export const authApi = {
@@ -27,6 +41,7 @@ export const authApi = {
         method: "POST",
         headers: getHeaders(false), // 登录接口不需要Authorization
         body: JSON.stringify(userData),
+        signal: createTimeoutSignal(AUTH_REQUEST_TIMEOUT_MS),
       }
     );
 
@@ -67,6 +82,7 @@ export const userApi = {
   getUserInfo: async () => {
     const response = await fetch(`${API_CONFIG.API_BASE}/api/user/info`, {
       headers: getHeaders(),
+      signal: createTimeoutSignal(USER_INFO_TIMEOUT_MS),
     });
 
     return handleApiError(response);

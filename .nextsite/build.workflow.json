@@ -171,7 +171,6 @@
           "status": "partial",
           "owner": "human",
           "phase": 0,
-          "done": false,
           "panel": "project-site-settings",
           "gate": [
             {
@@ -179,7 +178,8 @@
               "target": "data/site.json",
               "description": "完整站点配置已存在；.nextsite/site.json 投影未生成"
             }
-          ]
+          ],
+          "childLevel": "phase-0:site-json"
         },
         {
           "id": "module-switches",
@@ -1275,6 +1275,12 @@
           "done": false
         }
       ]
+    },
+    {
+      "id": "phase-0:site-json",
+      "title": "站点基础配置 子流程",
+      "subtitle": "当前流程下的子节点按执行顺序排列。",
+      "nodes": []
     }
   ]
 }

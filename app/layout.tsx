@@ -1,6 +1,6 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
 import { Suspense } from "react";
-import type { Metadata } from "next";
 import PaymentStatusModal from "@/components/payment-status-modal";
 import { ToastProvider } from "@/components/ui/toast-provider";
 import { TaskCenterWidget } from "@/components/task-center/TaskCenterWidget";
@@ -18,6 +18,7 @@ import {
   AIStudioProvider,
   AIStudioTrigger,
 } from "@/components/ai-studio";
+import ClerkProviderWithLocale from "@/components/auth/clerk-provider";
 import {
   ApiConfigProvider,
   UserProvider,
@@ -25,7 +26,10 @@ import {
   VideoPreviewProvider,
   GlobalVolumeProvider,
 } from "@/providers";
+
+
 import siteConfigData from "@/data/site.json";
+import { Metadata } from "next";
 
 const site = siteConfigData.site;
 const seo = siteConfigData.seo;
@@ -58,14 +62,15 @@ export const metadata: Metadata = {
 };
 
 
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 export default async function RootLayout({
   children,
   aiStudioModal,
-  authModal,
 }: {
   children: React.ReactNode;
   aiStudioModal?: React.ReactNode;
-  authModal?: React.ReactNode;
 }) {
   const siteConfig = await getFrontendSiteConfig();
   const enableAudioPlayer = siteConfig?.features?.enableAudioPlayer ?? false;
@@ -85,7 +90,6 @@ export default async function RootLayout({
         <PaymentStatusModal />
       </Suspense>
       <TaskCenterWidget />
-      {authModal}
       {enableAiStudio && (
         <>
           <AIStudioModal />
@@ -110,26 +114,30 @@ export default async function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning className="dark">
-      <body className="bg-background text-foreground">
+      <body
+        className={`${inter.variable} bg-background text-foreground`}
+      >
         <SiteThemeProvider theme={siteConfig?.theme}>
-          <GlobalVolumeProvider>
-            <ToastProvider>
-              <ApiConfigProvider
-                apiBase={siteConfig?.api?.apiBase}
-                appId={siteConfig?.api?.appId}
-              >
-                <UserProvider>
-                  <TaskCenterProvider>
-                    <VideoPreviewProvider>
-                      <AudioPlayerProvider>
-                        {enableAudioPlayer ? content : content}
-                      </AudioPlayerProvider>
-                    </VideoPreviewProvider>
-                  </TaskCenterProvider>
-                </UserProvider>
-              </ApiConfigProvider>
-            </ToastProvider>
-          </GlobalVolumeProvider>
+          <ClerkProviderWithLocale>
+            <GlobalVolumeProvider>
+              <ToastProvider>
+                <ApiConfigProvider
+                  apiBase={siteConfig?.api?.apiBase}
+                  appId={siteConfig?.api?.appId}
+                >
+                  <UserProvider>
+                    <TaskCenterProvider>
+                      <VideoPreviewProvider>
+                        <AudioPlayerProvider>
+                          {enableAudioPlayer ? content : content}
+                        </AudioPlayerProvider>
+                      </VideoPreviewProvider>
+                    </TaskCenterProvider>
+                  </UserProvider>
+                </ApiConfigProvider>
+              </ToastProvider>
+            </GlobalVolumeProvider>
+          </ClerkProviderWithLocale>
         </SiteThemeProvider>
         <AnalyticsScripts />
       </body>
